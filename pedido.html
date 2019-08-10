@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fuente/entypo/style.css">
+    <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
+     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pedido.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/bread.png" />
+    <title>Gestionar pedido</title>
+</head>
+<body>
+        <header>
+                <nav>
+                 <div class="item-nav">
+                    <a href="#" id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+                 </div>
+                  <div class="item-nav">
+                      <img   src="img/LogoPanaderia.png" alt="">
+                  </div>
+                 <div class="item-nav"> 
+                   <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+                   <div><span class="item-right">Jorge Molina</span></div>
+                 </div>
+                </nav>        
+         </header>
+     <div class="content-menu" id="content-menu">
+                      <div class="menbrete">
+                              <div class="imagen">
+                                 <img src="img/jorge-perfil.png" alt="">
+                              </div>
+                              <div class="texto">
+                                <span>Jorge Molina</span>
+                                <span>Administrador</span>
+                              </div>
+                             </div>
+                           <ul>
+                               <li><a href="dashboard.html">Inicio</a></li>
+                               <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+                               <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+                               <li><a href="pedido.html">Gestionar Pedido</a></li>
+                               <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+                               <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+                               <li class="cuenta"><a href="">Crear Cuenta</a></li>
+                               <li><a href="index.html">Salir</a></li>
+                           </ul> 
+    </div>
+    <div class="content-main row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="pedidos">
+                        <ul id="lista-pedido">
+                            <li class="row li-selected" >
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido.png" alt="">
+                                    <span>Codigo:P001</span>
+                                    <span>Pendiente</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Vendedor: David Salguera</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 234</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">5 Und.</span> </span>
+                                    <span class="fecha">Fecha: 4-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="pendiente">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido.png" alt="">
+                                    <span>Codigo:P002</span>
+                                    <span>Pendiente</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Cliente: David Salguera</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 124</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">2 Und.</span> </span>
+                                    <span class="fecha">Fecha: 3-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="pendiente">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido.png" alt="">
+                                    <span>Codigo:P003</span>
+                                    <span>Pendiente</span>
+                                </div>
+                                <div class="col-xs-8" >
+                                    <span class="tipo">Vendedor: Manuel López</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 2,334</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">34 Und.</span> </span>
+                                    <span class="fecha">Fecha: 2-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="satisfecho">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido-2.png" alt="">
+                                    <span>Codigo:P004</span>
+                                    <span>Satisfecho</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Vendedor: David Salguera</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 23</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">1 Und.</span> </span>
+                                    <span class="fecha">Fecha: 1-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="satisfecho">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido-2.png" alt="">
+                                    <span>Codigo:P005</span>
+                                    <span>Satisfecho</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Cliente: Manuel López</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 444</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">6 Und.</span> </span>
+                                    <span class="fecha">Fecha: 1-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="pendiente">
+                                    <div class="col-xs-4">
+                                        <img src="img/icon-pedido-2.png" alt="">
+                                        <span>Codigo:P006</span>
+                                        <span>Satisfecho</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="tipo">Cliente: Jose López</span>
+                                        <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 444</span> </span>
+                                        <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">6 Und.</span> </span>
+                                        <span class="fecha">Fecha: 1-julio-2019</span>
+                                    </div>
+                                </li>
+                                <li class="row" >
+                                    <div class="col-xs-4">
+                                        <img src="img/icon-pedido-3.png" alt="">
+                                        <span>Codigo:P007</span>
+                                        <span>Cancelado</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="tipo">Cliente: Maria Jose</span>
+                                        <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 44</span> </span>
+                                        <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">1 Und.</span> </span>
+                                        <span class="fecha">Fecha: 1-junio-2019</span>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+        </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="realizar row">
+                    <div class="alto row" id="panel-informacion">
+                        <span class="col-xs-5">Codigo:P001</span>
+                        <span class="col-xs-7">Vendedor: David Salguera</span>
+                        <span class="col-xs-6">Fecha: 4-julio-2019</span>
+                        <span class="col-xs-6"><span>Total: </span><span>C$ 234</span></span>
+                    </div>
+                    <div class="medio" id="medio">
+                        <div class="estado"><span>Estado:</span> <span class="pendiente">Pendiente</span></div>
+                        <ul id="lista-productos">
+                            <li>
+                                <div class="medio-productos">
+                                    <div><img src="img/Pico de piña.jpg" alt=""></div>
+                                    <div>
+                                        <span>Nombre: Paquete de Piña</span>
+                                        <span>Paquete: 24 unds.</span>
+                                        <span>Precio: C$ 20/bolsa.</span>
+                                    </div>
+                                    <div>
+                                        <span>Cantidad: 4</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="medio-productos">
+                                    <div><img src="img/Pan de Hot Dog.jpg" alt=""></div>
+                                    <div>
+                                        <span>Nombre: Pan de molde de barra</span>
+                                        <span>Paquete: 12 unds.</span>
+                                        <span>Precio: C$ 20/bolsa.</span>
+                                    </div>
+                                    <div>
+                                        <span>Cantidad: 3</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="medio-productos">
+                                    <div><img src="img/Punto Rojo.jpg" alt=""></div>
+                                    <div>
+                                        <span>Nombre: Punto rojo</span>
+                                        <span>Paquete: 12 unds.</span>
+                                        <span>Precio: C$ 16/bolsa.</span>
+                                    </div>
+                                    <div>
+                                        <span>Cantidad: 2</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="medio-productos">
+                                    <div><img src="img/Torta de gato.jpg" alt=""></div>
+                                    <div>
+                                        <span>Nombre: Torta de gato</span>
+                                        <span>Paquete: 12 unds.</span>
+                                        <span>Precio: C$ 30/bolsa.</span>
+                                    </div>
+                                    <div>
+                                        <span>Cantidad: 6</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="medio-productos">
+                                    <div class=""><img src="img/icon-user-comentario.png" alt=""></div>
+                                    <div class="">
+                                        <span>Comentario:</span>
+                                        <span>La señora pode las bolsas hermeticas.</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bajo">
+                        <div class="col-xs-12 col-sm-8 col-md-7">
+                                <textarea name="comentario" maxlength="150" id="text-comentario" cols="1" rows="1"
+                                placeholder="Agregar un comentario"></textarea>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-5">
+                                        <a href="#" id="btnAgregar">Registrar</a>
+                                        <a href="#" onclick="Click_satisfecho();" class="satisfecho">Satisfecho</a>
+                                        <a href="#" onclick="Click_cancelado();" class="cancelado">Cancelado</a>
+                        </div>
+                    </div>
+                </div>
+      </div>  
+    </div>
+<script src="js/jquery.min.3.3.1.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.3.3.7.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/pedido.js"></script>
+<script src="js/pedido_query.js"></script>
+</body>
+</html>

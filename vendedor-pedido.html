@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fuente/entypo/style.css">
+    <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
+     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pedido.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/bread.png" />
+    <title>Gestionar pedido</title>
+</head>
+<body>
+        <header>
+                <nav>
+                 <div class="item-nav">
+                    <a href="#" id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+                 </div>
+                  <div class="item-nav">
+                      <img   src="img/LogoPanaderia.png" alt="">
+                  </div>
+                 <div class="item-nav"> 
+                   <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+                   <div><span class="item-right">Jorge Molina</span></div>
+                 </div>
+                </nav>        
+         </header>
+     <div class="content-menu" id="content-menu">
+                      <div class="menbrete">
+                              <div class="imagen">
+                                 <img src="img/jorge-perfil.png" alt="">
+                              </div>
+                              <div class="texto">
+                                <span>Jorge Molina</span>
+                                <span>Administrador</span>
+                              </div>
+                             </div>
+                           <ul>
+                               <li><a href="dashboard.html">Inicio</a></li>
+                               <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+                               <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+                               <li><a href="pedido.html">Gestionar Pedido</a></li>
+                               <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+                               <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+                               <li class="cuenta"><a href="">Crear Cuenta</a></li>
+                               <li><a href="index.html">Salir</a></li>
+                           </ul> 
+    </div>
+    <div class="content-main row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="pedidos">
+                        <ul id="lista-pedido">
+                            <li class="row li-selected" >
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido.png" alt="">
+                                    <span>Codigo:P001</span>
+                                    <span>Pendiente</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Vendedor: David Salguera</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 234</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">5 Und.</span> </span>
+                                    <span class="fecha">Fecha: 4-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="pendiente">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido.png" alt="">
+                                    <span>Codigo:P002</span>
+                                    <span>Pendiente</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Cliente: David Salguera</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 124</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">2 Und.</span> </span>
+                                    <span class="fecha">Fecha: 3-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="pendiente">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido.png" alt="">
+                                    <span>Codigo:P003</span>
+                                    <span>Pendiente</span>
+                                </div>
+                                <div class="col-xs-8" >
+                                    <span class="tipo">Vendedor: Manuel López</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 2,334</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">34 Und.</span> </span>
+                                    <span class="fecha">Fecha: 2-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="satisfecho">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido-2.png" alt="">
+                                    <span>Codigo:P004</span>
+                                    <span>Satisfecho</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Vendedor: David Salguera</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 23</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">1 Und.</span> </span>
+                                    <span class="fecha">Fecha: 1-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="satisfecho">
+                                <div class="col-xs-4">
+                                    <img src="img/icon-pedido-2.png" alt="">
+                                    <span>Codigo:P005</span>
+                                    <span>Satisfecho</span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <span class="tipo">Cliente: Manuel López</span>
+                                    <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 444</span> </span>
+                                    <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">6 Und.</span> </span>
+                                    <span class="fecha">Fecha: 1-julio-2019</span>
+                                </div>
+                            </li>
+                            <li class="row" name="pendiente">
+                                    <div class="col-xs-4">
+                                        <img src="img/icon-pedido-2.png" alt="">
+                                        <span>Codigo:P006</span>
+                                        <span>Satisfecho</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="tipo">Cliente: Jose López</span>
+                                        <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 444</span> </span>
+                                        <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">6 Und.</span> </span>
+                                        <span class="fecha">Fecha: 1-julio-2019</span>
+                                    </div>
+                                </li>
+                                <li class="row" >
+                                    <div class="col-xs-4">
+                                        <img src="img/icon-pedido-3.png" alt="">
+                                        <span>Codigo:P007</span>
+                                        <span>Cancelado</span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="tipo">Cliente: Maria Jose</span>
+                                        <span class="costo"><span class="costo-1">Costo total:</span> <span class="costo-2">C$ 44</span> </span>
+                                        <span class="paquete"><span class="paquete-1">Paquete:</span> <span class="paquete-2">1 Und.</span> </span>
+                                        <span class="fecha">Fecha: 1-junio-2019</span>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+        </div>
+    </div>
+<script src="js/jquery.min.3.3.1.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.3.3.7.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

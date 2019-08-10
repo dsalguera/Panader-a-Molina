@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fuente/entypo/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
+  <link rel="stylesheet" href="css/mensaje-aplicacion.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/bread.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mensaje</title>
+</head>
+<body>
+<header>
+  <nav>
+   <div class="item-nav">
+      <a href="#" id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+   </div>
+    <div class="item-nav">
+        <img   src="img/LogoPanaderia.png" alt="">
+    </div>
+   <div class="item-nav"> 
+     <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+     <div><span class="item-right">Jorge Molina</span></div>
+   </div>
+  </nav>        
+  </header>
+  <div class="content-menu" id="content-menu">
+        <div class="menbrete">
+                <div class="imagen">
+                   <img src="img/jorge-perfil.png" alt="">
+                </div>
+                <div class="texto">
+                  <span>Jorge Molina</span>
+                  <span>Administrador</span>
+                </div>
+               </div>
+             <ul>
+                 <li><a href="dashboard.html">Inicio</a></li>
+                 <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+                 <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+                 <li><a href="pedido.html">Gestionar Pedido</a></li>
+                 <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+                 <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+                 <li class="cuenta"><a href="">Crear Cuenta</a></li>
+                 <li><a href="index.html">Salir</a></li>
+             </ul> 
+  </div>
+  <div class="content-principal row">
+      <div class="content-message col-xs-12">
+          <h2><span class="icon-chat mensaje"></span> Enviar mensaje a Panaderia Molina</h2>
+          <div class="principal" id="lista-scroll">
+               <ul id="lista-mensaje">
+                       <li id="men-num-0">
+                               <div class="mensaje mensaje-user" id="mensaje-num-0">
+                               <div class="icon">
+                               <span class="icon-user"></span>
+                               </div>
+                               <p class="title"> Panaderia Molina - Administrador</p>
+                               <p class="cuerpo"> Bienvenido, gracias por registrate en nuestra comunidad. Espero brindarte los productos que buscas para tus eventos con la mayor calidad como solo Panaderia Molina sabe hacerlo.
+                               </p>
+                               <p class="info-user">9:17 PM.</p>
+                               </div>
+                       </li>
+                       <li id="men-num-1">
+                               <div class="mensaje" id="mensaje-num-1">
+                               <div class="icon">
+                               <span class="icon-user"></span>
+                               </div>
+                               <p class="title"> Manuel de J. Lopez Acevedo</p>
+                               <p class="cuerpo">Se agradece la bienvenida, Sr. Administrador espero contar con su apoyo para mis actividades.</p>
+                               <p class="info">9:17 PM.</p>
+                               </div>
+                       </li>
+               </ul>
+           </div>
+       </div>
+       <div class="content-controler  col-xs-12 row">    
+           <div class="content-text-area col-xs-12 col-sm-9 col-md-8">
+               <textarea   cols="1" rows="1" id="mensaje-de-texto" placeholder="Escribir Mensaje"></textarea>
+               </div>
+               <div class="content-enviar col-xs-12 col-sm-3 col-md-4">
+                   <a href="#" id="btnEnviar" onclick=" Enviar();">Enviar</a>
+               </div>
+       </div>
+  </div>
+  <div class="btnback">
+      <a href="dashboard.html"><span class="icon-chevron-left"></span></a>
+    </div>
+<script src="js/jquery.min.3.3.1.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.3.3.7.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/mensaje-aplicacion.js"></script>
+<script src="js/mensaje-aplicacion-query.js "></script>
+</body>
+</html>
+
