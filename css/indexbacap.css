@@ -1,0 +1,164 @@
+.blue {
+    background-color: #3c32a4;
+    transition: 1s;
+}
+
+nav {
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+nav img {
+    width: 5%;
+    margin-left: 5px;
+    margin-right: 36px;
+    z-index: 1;
+}
+
+nav div {
+    text-align: center;
+}
+
+nav div ul li a {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+nav div .btn {
+    color: #FFF;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.valores {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c32a4;
+}
+
+.valores h3 {
+    font-family: Segoe UI;
+    font-size: 150%;
+}
+
+.valoresC {
+    background-color: #3c32a4;
+    border-radius: 30px;
+    border-top: 12px solid #f8ff00;
+    border-left: 12px solid #f7ff00;
+    border-right: 12px solid #f7ff00;
+    border-style: solid;
+    border-bottom: 12px solid #f7ff00;
+    box-shadow: 9px 0px 47px;
+    margin: 23px;
+}
+
+.valoresC h3 {
+    padding: 10px;
+    font-family: Segoe UI;
+    font-size: 150%;
+}
+
+.valoresC img {
+    padding: 18px;
+    background-color: #ffffff;
+    margin: 4px;
+    border-radius: 29px;
+    border: 9px solid #f8ff00;
+}
+
+.valoresC p {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.galeria,
+.lpn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c32a4;
+}
+
+.galeria h3 {
+    font-family: Segoe UI;
+    font-size: 150%;
+}
+
+.contenedor {
+    padding: 30px 0px;
+    background-color: #dfdfdf;
+}
+
+.contenedor div {
+    background-color: #fff;
+    border-radius: 0pxpx;
+    margin: 0px;
+    border: 12px solid rgba(60, 50, 164, 0);
+    padding: 3px;
+    box-shadow: 6px 6px 10px 0px;
+}
+
+.contenedor div h4 {
+    font-family: Segoe UI;
+    font-size: 90%;
+}
+
+.lpn h3 {
+    color: #ffffff;
+    font-family: Segoe UI;
+    font-size: 150%;
+}
+
+.comentarios {
+    padding: 30px 0px;
+    background-color: #dfdfdf;
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comentarios div {
+    background-color: #fff;
+    border-radius: 30px;
+    border: 12px solid rgba(248, 255, 0, 0);
+    box-shadow: 9px 0px 47px;
+    margin: 32px;
+}
+
+.comentarios div p {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: #3c32a4;
+}
+
+footer div div img {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+footer div div:nth-of-type(2) h5 {
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 90%;
+}
+
+footer div div:nth-of-type(3) h5 {
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 90%;
+}

@@ -1,0 +1,339 @@
+.fondo-azul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c32a4;
+    color: #FFF;
+}
+
+.rueda {
+    border-radius: 20px;
+}
+
+.fondo-gris {
+    background-color: #BABABB;
+}
+
+.blue {
+    background-color: #3c32a4;
+    transition: 1s;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (min-width: 480px) {
+    nav img .img-fluid {
+        width: 15%;
+        margin-left: 5px;
+        margin-right: 36px;
+        z-index: 1;
+    }
+
+    /* .fondo-galeria {
+    } */
+    nav {
+        transition: 1s;
+        background-color: rgba(0, 0, 0, 0.32);
+    }
+
+    nav img {
+        width: 5%;
+        margin-left: 5px;
+        margin-right: 36px;
+        z-index: 1;
+    }
+
+    nav div {
+        text-align: center;
+    }
+
+    nav div ul li a {
+        text-align: center;
+        font-family: Segoe UI;
+        font-weight: lighter;
+        border-color: solid #FFF;
+        border-size: 15px;
+    }
+
+    nav div .btn {
+        color: #FFF;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    /* .valores {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c32a4;
+} */
+    .valores h3 {
+        font-family: Segoe UI;
+        font-size: 150%;
+    }
+
+    .valoresC {
+        background-color: #3c32a4;
+        border-radius: 30px;
+        border-top: 12px solid #f8ff00;
+        border-left: 12px solid #f7ff00;
+        border-right: 12px solid #f7ff00;
+        border-bottom: 12px solid #f7ff00;
+        box-shadow: 9px 0px 47px;
+        margin: 23px;
+        width: 60%;
+        height: 10%;
+    }
+
+    .valoresC h3 {
+        padding: 10px;
+        font-family: Segoe UI;
+        font-size: 150%;
+    }
+
+    .valoresC img {
+        padding: 18px;
+        background-color: #ffffff;
+        margin: 4px;
+        border: 9px solid #f8ff00;
+    }
+
+    .valoresC p {
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    .galeria,
+    .lpn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #3c32a4;
+    }
+
+    .galeria h3 {
+        font-family: Segoe UI;
+        font-size: 150%;
+    }
+
+    .contenedor {
+        padding: 30px 0px;
+        background-color: #FFF;
+    }
+
+    .contenedor div h4 {
+        font-family: Segoe UI;
+        font-size: 90%;
+    }
+
+    .lpn h3 {
+        color: #ffffff;
+        font-family: Segoe UI;
+        font-size: 150%;
+    }
+
+    .comentarios {
+        padding: 30px 0px;
+        background-color: #dfdfdf;
+        background-image: url("../images/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .comentarios div {
+        background-color: #fff;
+        border-radius: 30px;
+        border: 12px solid rgba(248, 255, 0, 0);
+        box-shadow: 9px 0px 47px;
+        margin: 32px;
+    }
+
+    .comentarios div p {
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    footer {
+        background-color: #3c32a4;
+    }
+
+    footer div div img {
+        width: 100px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+
+    footer div div:nth-of-type(2) h5 {
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-family: Segoe UI;
+        font-size: 120%;
+    }
+
+    footer div div:nth-of-type(3) h5 {
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+        text-align: center;
+        font-family: Segoe UI;
+        font-size: 120%;
+    }
+
+    .fondo-galeria {
+        border-radius: 25px;
+        padding: 1%;
+        box-shadow: 0px 0px 10px;
+    }
+}
+
+/* Mi Código CSS de la animación del hover Moisés*/
+#galery {
+    position: relative;
+    overflow: hidden;
+}
+
+#divs {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    top: 10%;
+    border: solid #F8FF00 3px;
+    width: 70%;
+    height: 70%;
+    border-radius: 25px;
+
+    /* 235, 197, 28 */
+    background-color: #3c32a4;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.infogal {
+    position: absolute;
+    top: 0;
+    left: -101%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0,0.7);
+    transition: .5s;
+}
+
+#divs span.border {
+    position: absolute;
+    width: 40%;
+    height: 29%;
+    top: 15%;
+    left: 33%;
+    display: block;
+    transform: rotate(45deg);
+    pointer-events: none;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.795);
+}
+
+#divs span.borders {
+    position: absolute;
+    width: 21%;
+    height: 29%;
+    top: 15%;
+    left: 41%;
+    display: block;
+    transform: rotate(45deg);
+    pointer-events: none;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.795);
+}
+
+#divs span.border::before,
+#divs span.borders::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top: 4px solid #F8FF00;
+    border-bottom: 4px solid #F8FF00;
+    box-sizing: border-box;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+#galery:hover #divs span.border::before,
+#galery:hover #divs span.borders::before {
+    transform: scaleX(1);
+    transition-delay: 0.4s;
+}
+
+#divs span.border::after,
+#divs span.borders::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-right: 4px solid #F8FF00;
+    border-left: 4px solid #F8FF00;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+
+#galery:hover #divs span.border::after,
+#galery:hover #divs span.borders::after {
+    transform: scaleY(1);
+    transition-delay: 1s;
+}
+
+#span-icon-shop {
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    font-size: 50px;
+}
+
+#span-icon-shops {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    font-size: 50px;
+}
+
+#btnordenar {
+    position: absolute;
+    background-color: #3c32a4;
+    top: 60%;
+    right: 24%;
+}
+
+#btnordenars {
+    position: absolute;
+    background-color: #3c32a4;
+    top: 60%;
+    right: 35%;
+}
+
+#galery:hover .infogal {
+    cursor: pointer;
+    left: 0%;
+}
+
+/*Código responsive*/
+@media screen and(min-width:768px){
+    #divs span.border {
+        width: 48%;
+        height: 25%;
+        top: 15%;
+        left: 27%;
+    }
+}

@@ -1,0 +1,351 @@
+/*Voy a usar esta fuente de prueba, vos la cambias*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    font-weight: 300;
+}
+body{
+    min-width: 350px;
+    height: 100%;
+    width: 100%;
+}
+header{
+    position: fixed;
+    display: block;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 50, 172);
+}
+
+header nav .item-nav{
+    display: block;
+    float: left;
+    height: 100%;
+}
+header nav .item-nav:nth-of-type(1){
+    width: 20%;
+}
+header nav .item-nav:nth-of-type(2){
+    width: 40%;
+}
+header nav .item-nav:nth-of-type(3){
+    width:40%;
+}
+header nav .item-nav:nth-of-type(1) a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    width: 15%;
+    height: 80%;
+    margin-top:5px;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+header nav .item-nav:nth-of-type(1) a span{
+    font-size: 3.5em;
+}
+header nav .item-nav:nth-of-type(2) img{
+  display: block;
+  margin: auto;
+  margin-left: 60%;
+  height: 100%;
+}
+header nav .item-nav:nth-of-type(3) div{
+    display: block;
+    float: right;
+    height: 100%;
+    width: 30%;
+    min-width: 70px;
+}
+header nav .item-nav:nth-of-type(3) div:nth-of-type(2){
+    width: 70%;
+    min-width: 150px;
+}
+header nav .item-nav:nth-of-type(3) div:nth-of-type(1) img{
+    display: block;
+    height: 80%;
+    margin: auto;
+    margin-top: 5px;
+    border: 3px solid rgb(255, 255, 255,0.4);
+    border-radius: 50%;
+}
+header nav .item-nav:nth-of-type(3) div:nth-of-type(2) span{
+    color:white;
+    font-size: 1.4em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    text-align: center;
+}
+.content-menu{
+    display: block;
+    position: fixed;
+    top: 70px;
+    z-index: 1000;
+    width: 230px;
+    background-color: rgb(61, 50, 172);
+    height: 100%;
+    left:-100%;
+    overflow: hidden;
+   }
+   .content-menu .menbrete > div{
+   float: left;
+   }
+   .content-menu .menbrete .texto > span{
+       display: block;
+       height: 25px;
+       width: 100%;
+       text-align: center;
+       color: white;
+       font-size: 18px;
+   }
+   .content-menu .menbrete .texto > span:first-of-type{
+       margin-top: 5px;
+   }
+   
+   .menbrete{
+     display: block;
+     width: 100%;
+     height: 70px;
+     box-sizing: border-box;
+     padding: 5px;
+     margin-top: 10px;
+     border: 1px solid rgb(255,255,255,0.3);
+   }
+   .menbrete .imagen{
+       box-sizing: border-box;
+       border: 1px solid rgb(255,255,255,0.3);
+       border-radius: 50%;
+       margin-left: 20px;
+   }
+   .content-menu .menbrete .imagen img{
+       display: block;
+       height: 60px;
+       margin: auto;
+   }
+   .content-menu ul{
+       width: 90%;
+       margin: auto;
+       margin-bottom: 30px;
+   }
+   .content-menu ul li{
+    list-style: none;
+     width: 100%;  
+     
+     margin-top: 10px;
+   }
+ 
+
+   .content-menu ul li.cuenta{
+       margin-top:100px;
+   }
+   
+   .content-menu ul li.cuenta a{
+       background-color: rgb(235, 235, 5);
+       color:white;
+   }
+   .content-menu ul li.cuenta a:hover{
+       background-color: white;
+       color:rgb(61, 50, 172);
+   }
+   .content-menu ul li.cuenta + li a{
+       background-color: rgb(255,0,0,0.8);
+       color:white;
+   }
+   .content-menu ul li.cuenta + li a:hover{
+    background-color: white;
+    color:rgb(61, 50, 172);
+}
+   .content-menu ul li a{
+       display: block;
+       text-decoration: none;
+       width: 100%;
+       padding: 5px;
+       box-sizing: border-box;
+       color: rgb(61, 50, 172);
+       background-color: white;
+       border-radius: 8px;
+       text-align: center;
+       font-size: 14px;
+       border: 1px solid rgb(255,255,255,0.5);
+       -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+       -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+       transition: all 0.3s ease;
+   
+   }
+   
+   .content-menu ul li a:hover{
+       background-color:  rgb(61, 50, 172);
+       color: white;
+       border: 1px solid white;
+       -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+       -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+       transition: all 0.3s ease;
+       transform: translateY(4px);
+       cursor: pointer;
+   }
+
+   .content-menu ul li a:active{
+    background-color:  rgb(255,255,255,0.1);
+   }
+
+   .content-principal{
+     display: block;
+     width: 90%;
+     height: 90vh;
+     margin: auto;
+     padding-top: 100px;
+     box-sizing: border-box;
+     overflow: hidden;
+    }
+    .content-principal .content-panel{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .content-principal .content-panel .img{
+        position: absolute;
+        display: block;
+        height: 25vw;
+        width: 25vw;
+        border-radius: 50%;
+        left: 35%;
+        top:10%;
+        padding-top:6%;
+        box-sizing: border-box; 
+        border: 1px solid rgb(61, 50, 172,0.5);
+    }
+    .content-principal .content-panel .img img{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .content-principal .content-panel .panel{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: rgb(61, 50, 172,0.3);
+        
+    }
+    .content-principal .content-panel .panel ul {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .content-principal .content-panel .panel ul li{
+        list-style: none;
+    }
+    .content-principal .content-panel .panel ul li a{
+    font-size: 18px;
+        display: block;
+       text-decoration: none;
+       width: 100%;
+       padding: 10px 5px;
+       box-sizing: border-box;
+       color: rgb(61, 50, 172);
+       background-color: white;
+       border-radius: 8px;
+       margin:auto;
+       margin-top:10px;
+       text-align: center;
+       font-size: 14px;
+       border: 1px solid rgb(255,255,255,0.5);
+       -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+       -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+       transition: all 0.3s ease;   
+    }
+    .content-principal .content-panel .panel ul li a:hover{ 
+    background-color:  rgb(61, 50, 172);
+    color: white;
+    border: 1px solid white;
+    transform: translateY(4px);
+    cursor: pointer;
+    }
+    .content-principal .content-panel .panel ul li a:active{ 
+        background-color:  rgb(255,255,255,0.1);
+        transform: translateY(6px);
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*Esto es para diseño adaptable, los media queries siempre se dejan de ultimo*/
+
+@media screen and (max-width: 700px) {
+	  header nav .item-nav:nth-of-type(2){
+        display: none;
+    }
+    header nav .item-nav:nth-of-type(3){
+    width:80%;  
+    }
+   .content-menu ul li.cuenta{
+       margin-top:10px;
+   }
+
+}
+
+
+@media screen and (max-width: 500px) {
+   .content-menu{
+     width: 100%;
+     height: 100%;
+   }
+   .content-menu ul li{
+       width: 70%;
+       margin: auto;
+       margin-top:10px;
+   }
+   .content-menu  .menbrete .imagen img{
+      display: none;
+   }
+   .content-menu  .menbrete .texto span:first-of-type{
+       display: none;
+   }
+   .content-menu  .menbrete .texto span:first-of-type + span{
+    margin-top: 10px;
+    }
+  .content-menu  .menbrete .texto{
+      display: block;
+      width: 100%;
+  }
+  .menbrete{
+      margin-right: 0px;
+  }
+  .content-menu  .menbrete .texto span{
+    display: block;
+      width: 100%;
+      text-align: center;
+  }
+}
+

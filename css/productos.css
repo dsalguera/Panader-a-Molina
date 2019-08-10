@@ -1,0 +1,388 @@
+.blue {
+    background-color: #3c32a4;
+    transition: 1s;
+}
+
+nav div {
+    text-align: center;
+}
+
+nav div ul li a {
+    text-align: center;
+    font-family: Segoe UI;
+    font-weight: lighter;
+}
+
+.Nproductos {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c32a4;
+}
+
+.Nproductos h3 {
+    font-size: 150%;
+    font-family: Segoe UI;
+}
+
+.contenedor {
+    padding: 30px 0px;
+    background-color: #dfdfdf;
+}
+
+.contenedor div {
+    background-color: #fff;
+    border-radius: 30px;
+    border: 5px solid #f8ff00;
+    margin: 20px 50px;
+}
+
+.contenedor div h4 {
+    background-color: #3c32a4;
+    margin-top: 11px;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: Segoe UI;
+    font-size: 100%;
+}
+
+.contenedor div img {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 17px;
+}
+
+.contenedor div button {
+    width: 90%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #3c32a4;
+}
+
+footer {
+    background-color: #3c32a4;
+}
+
+footer div div img {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.title {
+    color: #FFF;
+    background-color: #3c32a4;
+}
+
+.buttonA {
+    color: #FFF;
+    background-color: #3c32a4;
+}
+
+.buttonA:hover {
+    color: #FFF;
+    background-color: #28216D;
+}
+
+/*MIS CAMBIOS DE CSS Moisés*/
+* {
+    font-family: 'Segoe UI';
+    font-weight: 300;
+}
+
+.text-center.col-md-3.col-xl-3.col-lg-3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-center.col-md-3.col-xl-3.col-lg-3 h3,
+h4,
+button {
+    z-index: 1;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: -101%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.7);
+    transition: .5s;
+    border-radius: 0px 25px 25px 0px;
+}
+
+#divs {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    top: 5%;
+    border: solid #FFF 3px;
+    width: 70%;
+    height: 70%;
+    border-radius: 25px;
+
+    /* 235, 197, 28 */
+    background-color: #3C32A4;
+
+    /* -moz-box-shadow: 0 0 5px 5px #888;
+      -webkit-box-shadow: 0 0 5px 5px#888;
+      box-shadow: 0 0 10px 1px rgb(49, 47, 47); */
+}
+
+#und {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: solid #FFF 1px;
+}
+
+.info h3 {
+    position: absolute;
+    font-size: 140%;
+    margin: 0;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%);
+    color: #FFF;
+}
+
+.info p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 16%;
+    left: -5%;
+    color: #FFF;
+}
+
+.text-center.col-md-3.col-xl-3.col-lg-3:hover .info {
+    cursor: pointer;
+    left: 0%;
+}
+
+#span-icon-bowl {
+    position: absolute;
+    color: #F8FF00;
+    top: 17%;
+    left: 45%;
+    font-size: 25px;
+    z-index: 1;
+}
+
+#span-icon-feather {
+    position: absolute;
+    color: #F8FF00;
+    top: 17%;
+    left: 25%;
+    z-index: 1;
+}
+
+#span-icon-feather2 {
+    position: absolute;
+    color: #F8FF00;
+    top: 17%;
+    left: 70%;
+    z-index: 1;
+}
+/*Código responsive*/
+@media screen and (min-width:2701px){
+    #span-icon-bowl {
+        top: 19%;
+        left: 47%;
+        font-size: 23px;
+    }
+    #span-icon-feather {
+        left: 31%;
+    }
+
+    #span-icon-feather2 {
+        left: 65%;
+    }
+    .info p {
+        top: -2%;
+    }
+}
+@media screen and (min-width:2000px) and 
+(max-width:2700px){
+    #span-icon-bowl {
+        top: 19%;
+        left: 47%;
+        font-size: 23px;
+    }
+    #span-icon-feather {
+        left: 31%;
+    }
+
+    #span-icon-feather2 {
+        left: 65%;
+    }
+    .info p {
+        top: 8%;
+    }
+    
+}
+@media screen and (min-width:1101px)
+and (max-width: 1400px){
+    .info h3 {
+        font-size: 103%;
+    }
+    #divs{
+        top: 7%;
+    }
+    #span-icon-bowl {
+        top: 15%;
+        left: 45%;
+        font-size: 23px;
+    }
+
+    #span-icon-feather {
+        top: 17%;
+        left: 25%;
+    }
+
+    #span-icon-feather2 {
+        top: 17%;
+        left: 69%;
+    }
+}
+@media screen and (min-width: 946px)
+      and (max-width: 1100px) {
+    .info h3 {
+        font-size: 103%;
+    }
+    #divs{
+        top: 7%;
+    }
+    #span-icon-bowl {
+        top: 15%;
+        left: 43%;
+        font-size: 23px;
+    }
+
+    #span-icon-feather {
+        top: 17%;
+        left: 20%;
+    }
+
+    #span-icon-feather2 {
+        top: 17%;
+        left: 73%;
+    }
+}
+
+@media screen and (min-width: 768px)
+      and (max-width:945px)
+       {
+    .info h3 {
+        top: 21%;
+        font-size: 97%;
+    }
+
+    .info p {
+        font-size: 76%;
+    }
+
+    #divs {
+        top: 10%;
+        height: 60%;
+    }
+
+    .btn.btn-primary {
+        width: 80%;
+        height: 16%;
+    }
+
+    #span-icon-bowl {
+        top: 17%;
+        left: 44%;
+        font-size: 18px;
+    }
+
+    #span-icon-feather {
+        top: 22%;
+        left: 18%;
+    }
+
+    #span-icon-feather2 {
+        top: 22%;
+        left: 74%;
+    }
+}
+@media screen and (min-width: 569px)
+      and (max-width:767px)
+       {
+    .text-center.col-md-3.col-xl-3.col-lg-3:hover .info {
+        left: 0%;
+    }
+
+    .btn.btn-primary {
+        left: 3%;
+    }
+
+    #divs {
+        top: 5%;
+        width: 50%;
+        height: 73%;
+        left: 1%;
+    }
+
+    .info h3 {
+        top: 18%;
+        left: 51%;
+    }
+
+    #span-icon-bowl {
+        position: absolute;
+        top: 19%;
+        left: 46%;
+        font-size: 25px;
+        z-index: 1;
+    }
+
+    #span-icon-feather {
+        position: absolute;
+        top: 19%;
+        left: 34%;
+        z-index: 1;
+    }
+
+    #span-icon-feather2 {
+        position: absolute;
+        top: 19%;
+        left: 65%;
+        z-index: 1;
+    }
+
+    .info p {
+        top: 11%;
+        left: -5%;
+    }
+
+    #und {
+        margin-top: 1%;
+    }
+}
+
+@media screen and (min-width: 320px)
+      and (max-width: 568px) {
+    .info h3 {
+        font-size: 116%;
+    }
+    #span-icon-feather {
+        left: 20%;
+    }
+
+    #span-icon-feather2 {
+        left: 74%;
+    }
+    #span-icon-bowl {
+        top: 16%;
+        left: 44%;
+        font-size: 21px;
+    }
+    
+}

@@ -1,0 +1,270 @@
+   
+    .content-main{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 30px;
+        padding-top: 70px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .content-main >div{
+        padding: 40px 30px;
+        padding-bottom: 10px;
+    }
+    .content-main .pedidos{
+        width: 100%;
+        background-color: rgb(112, 112, 112,0.4);
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: 85vh;
+        display: block;
+        overflow: auto;
+        border: 10px solid  rgb(112, 112, 112,0.08);
+    }
+    .content-main .pedidos ul{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 20px;
+        
+    }
+    .content-main .pedidos ul li{
+        list-style-type: none;
+        background-color: white;
+        display: block;
+        width: 90%;
+        min-width: 200px;
+        border: 1px solid rgb(0,0,0,0.5);
+        margin: 0px auto;
+        margin-top: 20px;
+        border-radius: 20px; 
+        padding: 5px;
+    }
+
+    .content-main .pedidos ul li div:nth-of-type(1) img,.content-main .pedidos ul li div:nth-of-type(1) span{
+        display: block;
+    } 
+    .content-main .pedidos ul li div:nth-of-type(2) >span{
+        display: block;
+    }
+    .content-main div{
+        display: block;
+        float: left;
+    }
+    .realizar span{
+        display: block;
+        float: left;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .realizar div {
+        display: block;
+    }
+    .realizar .medio{
+        display: block;
+        background-color: rgb(0,0,0,0.7);
+        height: 55vh;
+        width:100%;
+        overflow: auto;
+        margin-top: 20px;
+        border: 7px solid  rgb(0,0,0,0.08);
+        border-radius: 30px;
+    }
+    .realizar .bajo{
+        display: block;
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .realizar .bajo textarea{
+        display: block;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom: 10px;
+    height: 80px;
+    border-radius: 20px;	
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border-color: rgb(60, 50, 164);
+    color: rgb(60, 50, 164);
+    background-color: rgba(230, 230, 230,0.90); 
+    }
+    .realizar .bajo textarea:hover,.realizar .bajo textarea:focus{
+        border: 1px solid rgb(61, 50, 172);
+    }
+
+    .realizar .bajo   a{
+        text-decoration:none;
+        color:white;
+        width: 100%;
+        padding: 5px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;   
+    }
+    .realizar .bajo a:nth-child(1){
+        background-color: rgb(60, 50, 164);
+    }  
+    .realizar .bajo a:nth-child(2){
+        background-color: rgb(21, 159, 92);
+    }
+    .realizar .bajo a:nth-child(3){
+        background-color: rgb(221, 81, 69);
+        margin-bottom: 20px; 
+    }
+    .realizar .bajo a:nth-child(1):hover{
+        transform: translateY(4px);
+    }
+    .realizar .bajo a:nth-child(2):hover{
+        transform: translateY(4px);
+    }
+    .realizar .bajo a:nth-child(3):hover{
+        transform: translateY(4px);
+    }
+    .realizar .bajo a:nth-child(1):active{
+        transform: translateY(8px);
+        background-color: rgb(60, 50, 164,0.7);
+    }
+    .realizar .bajo a:nth-child(2):active{
+        transform: translateY(8px);
+        background-color: rgb(21, 159, 92,0.7);
+    }
+    .realizar .bajo a:nth-child(3):active{
+        transform: translateY(8px);
+        background-color: rgb(221, 81, 69,0.7);
+    }
+    .realizar .medio .estado{
+      display: block;
+      height: 30px;
+      width: 100%;
+      margin: 10px auto;
+    }
+    .realizar .medio .estado span{
+     display: block;
+        float: left; 
+    }
+    .realizar .medio .estado span:first-child{
+        margin-left: 30%;
+        color: white;
+    }
+    .realizar .medio .estado span:nth-child(2){
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+    
+    .medio ul{
+        display: block;
+        width: 90%;
+        height: 50px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .medio ul li{
+        list-style: none;
+    }
+
+    .medio-productos{
+        width: 100%;
+        background-color: white;
+        height: 50px;
+        border-radius: 20px;
+    }
+    .medio-productos div:nth-of-type(1){
+        display: block;
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+    .medio-productos div:nth-of-type(1) img{
+        display: block;
+        margin: 5px auto;
+        border-radius: 10px;
+    }
+    .medio-productos div:nth-of-type(2) {
+    display: block;
+    height: 50px;
+    width: 60%;
+    }
+    .medio-productos div:nth-of-type(2) span{
+        display: block;
+    }
+    .medio-productos div:nth-of-type(3){
+        display: block;
+        height: 100%;
+        padding-top:20px;
+        box-sizing: border-box;
+    }
+    .medio ul li .medio-productos{
+        margin-bottom: 10px;
+    }
+    .medio ul li:last-of-type .medio-productos{
+       height: 80px;
+    }
+    .medio ul li:last-of-type .medio-productos div:nth-of-type(2){
+        width: 80%;
+     }
+     .medio ul li:last-of-type .medio-productos div:nth-of-type(2) span:nth-of-type(2){
+         text-align: justify;
+     }
+     .medio ul li:last-of-type .medio-productos div:nth-of-type(1){
+        width: 10%;
+     }
+    .medio-productos div span{
+        font-size: 12px;
+    }
+   .medio-productos img{
+        width: 50px;
+    }
+    .content-main .pedidos ul li img{
+        border-radius: 50%;
+    }
+    .content-main .pedidos ul  .li-selected{
+        background-color:rgb(255,255,255,0.4);
+    }
+    .satisfecho{
+        background-color: rgb(21, 159, 92);
+        color: white;
+    }
+    .pendiente{
+        background-color: rgb(255, 237, 0);
+        color: rgb(60, 50, 164);
+    }
+    .cancelado{
+        background-color: rgb(198, 79, 69);
+        color:white;
+    }
+    #lista-productos li .medio-productos img{
+        max-height: 40px;
+    }
+    #lista-productos li:last-of-type .medio-productos{
+        padding-top:10px;
+        padding-left: 10%;
+    }
+    #lista-productos li:last-of-type .medio-productos img{
+        max-height: none;
+    }
+    #lista-productos li:last-of-type .medio-productos div:nth-of-type(1){
+     width: 20%;
+    }
+    #lista-productos li:last-of-type .medio-productos div:nth-of-type(2){
+        width: 80%;
+        padding-top:10px;
+    }

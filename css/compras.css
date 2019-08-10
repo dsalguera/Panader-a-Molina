@@ -1,0 +1,14 @@
+.titulo-carrito {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c32a4;
+}
+
+.circuloP {
+    border-radius: 20%;
+    width: 15%;
+}
+
+.texto-compras {
+    font-size: 1em;
+}
