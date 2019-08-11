@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fuente/entypo/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/material-icon.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
+  <link rel="stylesheet" href="css/perfil-estrategico-aplicacion.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/bread.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Perfil estrategico</title>
+</head>
+<body>
+       <!--Modal success-->
+       <div id="myModal-success" class="modal fade">
+            <div class="modal-dialog modal-confirm">
+                <div class="modal-content">
+                    <div class="modal-header-success">
+                        <div class="icon-box-success">
+                            <i class="material-icons">&#xE876;</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4>Se ha actualizado el perfil estrategico!</h4>	
+                        <p>La información de su empresa se ha actualizado, y sera visible para sus clientes en el area "acerca de".</p>
+                        <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Continuar</span> <i class="material-icons">&#xE5C8;</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Final modal-->
+<header>
+  <nav>
+   <div class="item-nav">
+      <a href="#" id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+   </div>
+    <div class="item-nav">
+        <img   src="img/LogoPanaderia.png" alt="">
+    </div>
+   <div class="item-nav"> 
+     <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+     <div><span class="item-right">Jorge Molina</span></div>
+   </div>
+  </nav>        
+  </header>
+  <div class="content-menu" id="content-menu">
+        <div class="menbrete">
+                <div class="imagen">
+                   <img src="img/jorge-perfil.png" alt="">
+                </div>
+                <div class="texto">
+                  <span>Jorge Molina</span>
+                  <span>Administrador</span>
+                </div>
+               </div>
+             <ul>
+                 <li><a href="dashboard.html">Inicio</a></li>
+                 <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+                 <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+                 <li><a href="pedido.html">Gestionar Pedido</a></li>
+                 <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+                 <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+                 <li class="cuenta"><a href="">Crear Cuenta</a></li>
+                 <li><a href="index.html">Salir</a></li>
+             </ul> 
+  </div>
+  <div class="content-principal ">
+    <div class="panel panel-default">
+        <div class="h1 panel-heading" id="pane-title-0">Misión de Panaderia Molina</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="comment">¿Quienes somos?</label>
+                <div class="content-text-area">
+                    <textarea class="form-control text-justify-content" id="text-vision" rows="1" id="comment">Somos una empresa dedicada a la elaboración de panadería y pastelería comprometidos con nuestros clientes en brindarles un producto de gran calidad y con servicio amable y oportuno.
+                    </textarea>
+                </div>
+              </div>
+        </div>
+      </div>   
+      <div class="panel panel-default">
+        <div class="h1 panel-heading" id="pane-title-0">Visión de Panaderia Molina</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="comment">¿A donde nos dirigimos?</label>
+                <div class="content-text-area">
+                    <textarea class="form-control" rows="1" id="text-mision"id="comment">Nuestro propósito es ser una de las mejores panaderías ofreciendo los mejores servicios que tenemos para nuestros clientes en calidad, honestidad y eficiencia.
+
+                    </textarea>
+                </div>
+              </div>
+        </div>
+      </div>  
+      <div class="panel panel-default">
+        <div class="h1 panel-heading" id="pane-title-0">Objectivos</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="comment">¿Que debemos hacer para llegar ahí?</label>
+                <div class="content-text-area">
+                    <textarea class="form-control" id="text-objetivos" rows="1" id="comment">
+1- Ser una de las mejores panaderías por destacarnos en la calidad y suavidad de nuestros productos.
+2- Ser destacados por la entrega de los pedidos a domicilio y satisfacer las necesidades de nuestros clientes.
+                    </textarea>
+                </div>
+              </div>
+        </div>
+      </div>  
+      <div class="botones row  ">
+          <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4">
+              <a href="#myModal-success" data-toggle="modal" data-target="#myModal-success" id="btn-save" class=" btn btn-primary" >Guardar</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+              <a href="dashboard.html" class="btn btn-danger">Cancelar</a>
+          </div>
+      </div>
+ </div>
+  <div class="btnback">
+      <a href="dashboard.html"><span class="icon-chevron-left"></span></a>
+    </div>
+<script src="js/jquery.min.3.3.1.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.3.3.7.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/perfil-estrategico-aplicacion.js"></script>
+</body>
+</html>
+

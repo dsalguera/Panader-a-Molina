@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Registrase</title>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="asset/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="asset/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/RegistrarCliente.css" rel="stylesheet" />
+  </head>
+  <body class="text-align-center">
+    <form
+      class="form-signin formulario"
+      action="modificaTusDatos.html"
+      enctype="multipart/form-data"
+    >
+  
+      <div class="r">
+        <h3>Formulario de registro</h3>
+        <h3>X</h3>
+      </div>
+      <div class="form-group">
+        <label for="Pnombre"> Primer Nombre</label>
+        <input
+          type="text"
+          class="form-control field"
+          id="Pnombre"
+          placeholder="Primer nombre"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="Snombre"> Segundo Nombre</label>
+        <input
+          type="text"
+          class="form-control field"
+          id="Snombre"
+          placeholder="Segundo nombre"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Papellido"> Primer Apellido</label>
+        <input
+          type="text"
+          class="form-control field"
+          id="Papellido"
+          placeholder="Primer apellido"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="Snombre"> Segundo Apellido</label>
+        <input
+          type="text"
+          class="form-control field"
+          id="Sapellido"
+          placeholder="Segundo apellido"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="direccion">Dirección</label>
+        <textarea class="form-control field" id="direccion" row="3"> </textarea>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input
+          type="text"
+          class="form-control field"
+          id="telefono"
+          placeholder="telefono"
+          required
+        />
+      </div>
+      <div class="credit-card-div">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row ">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control field"
+                  placeholder="Introduce el numero de tu tarjeta"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <span class="help-block text-muted small-font">
+                  Mes expiración</span
+                >
+                <input
+                  type="text"
+                  class="form-control field"
+                  placeholder="MM"
+                  required
+                />
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <span class="help-block text-muted small-font">
+                  Año expiración</span
+                >
+                <input
+                  type="text"
+                  class="form-control field"
+                  placeholder="YY"
+                  required
+                />
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <span class="help-block text-muted small-font"> CCV</span>
+                <input
+                  type="text"
+                  class="form-control field"
+                  placeholder="CCV"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12 pad-adjust">
+                <input
+                  type="text"
+                  class="form-control field"
+                  placeholder="Nombre de la tarjeta"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo Electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          class="form-control field"
+          placeholder="Correo Electrónico"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Contraseña</label>
+        <input
+          type="password"
+          id="inputPassword"
+          class="form-control field"
+          placeholder="Contraseña"
+          required
+        />
+      </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" />Recordar Contraseña
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block field" type="submit">
+        Registrarse
+      </button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <!--   Core JS Files   -->
+	<script src="asset/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="asset/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="asset/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="asset/js/gsdk-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="asset/js/jquery.validate.min.js"></script>
+
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+    <script src="asset/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
