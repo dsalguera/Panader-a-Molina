@@ -14,6 +14,7 @@ body {
 
 nav {
     transition: 1s;
+    background-color: #934949;
 }
 
 nav img {
@@ -300,8 +301,6 @@ div.mensaje-user div.icon-us {
     border-radius: 100%;
 }
 
-.enviado {
-}
-
-.recibido {
+.fondo-azul {
+    background-color: ;
 }

@@ -2,6 +2,8 @@
     font-family: 'Segoe UI';
     font-weight: 300;
 }
+
+
 body {
     background-color: #3D32AC;
     min-height: 100vh;
@@ -88,5 +90,39 @@ input[type=checkbox] {
 }
 
 .boton.regresar {
-    background-color: rgb(128, 40, 40);
+    background-color: rgb(29, 162, 97);
+}
+.btnback{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 75px;
+    left:10px;
+}
+.btnback a{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(221, 221, 221);
+    color: rgb(61, 50, 172);
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;   
+}
+.btnback a span{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 3em;    
+}
+.btnback a:hover{
+    transform: translateY(4px);
+    color: white;
+    background-color: rgb(20, 17, 54,0.1);
+}
+.btnback a:active{
+    background-color:rgb(61, 50, 172,0.5);
+    transform: translate(-8px,4px);
 }

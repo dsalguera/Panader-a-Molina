@@ -85,7 +85,7 @@ footer div div img {
     background-color: #28216D;
 }
 
-/*MIS CAMBIOS DE CSS Moisés*/
+/*MIS CAMBIOS DE CSS Moisés de la interfaz productos*/
 * {
     font-family: 'Segoe UI';
     font-weight: 300;
@@ -114,7 +114,7 @@ button {
     border-radius: 0px 25px 25px 0px;
 }
 
-#divs {
+#divsproductos {
     position: relative;
     margin: 0 auto;
     padding-left: 5%;
@@ -125,13 +125,7 @@ button {
     width: 70%;
     height: 70%;
     border-radius: 25px;
-
-    /* 235, 197, 28 */
     background-color: #3C32A4;
-
-    /* -moz-box-shadow: 0 0 5px 5px #888;
-      -webkit-box-shadow: 0 0 5px 5px#888;
-      box-shadow: 0 0 10px 1px rgb(49, 47, 47); */
 }
 
 #und {
@@ -230,7 +224,7 @@ and (max-width: 1400px){
     .info h3 {
         font-size: 103%;
     }
-    #divs{
+    #divsproductos{
         top: 7%;
     }
     #span-icon-bowl {
@@ -254,7 +248,7 @@ and (max-width: 1400px){
     .info h3 {
         font-size: 103%;
     }
-    #divs{
+    #divsproductos{
         top: 7%;
     }
     #span-icon-bowl {
@@ -286,7 +280,7 @@ and (max-width: 1400px){
         font-size: 76%;
     }
 
-    #divs {
+    #divsproductos {
         top: 10%;
         height: 60%;
     }
@@ -323,7 +317,7 @@ and (max-width: 1400px){
         left: 3%;
     }
 
-    #divs {
+    #divsproductos {
         top: 5%;
         width: 50%;
         height: 73%;
