@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fuente/entypo/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/material-icon.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/ListaProductosCSS.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/bread.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Panaderia Molina</title>
+</head>
+<body>
+<header>
+<nav>
+ <div class="item-nav">
+	<a id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+ </div>
+  <div class="item-nav">
+	  <img   src="img/LogoPanaderia.png" alt="">
+  </div>
+ <div class="item-nav"> 
+   <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+   <div><span class="item-right">Jorge Molina</span></div>
+ </div>
+</nav>        
+</header>
+<div class="content-menu" id="content-menu">
+  <div class="menbrete">
+	<div class="imagen">
+			 <img src="img/jorge-perfil.png" alt="">
+   </div>
+   <div class="texto">
+		  <span>Jorge Molina</span>
+		  <span>Administrador</span>
+ </div>
+ </div>
+		<ul>
+			  <li><a href="dashboard.html">Inicio</a></li>
+			  <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+			  <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+			  <li><a href="pedido.html">Gestionar Pedido</a></li>
+			  <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+			  <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+			 <li class="cuenta"><a href="Iadmin.html">Crear Cuenta</a></li>
+			 <li><a data-toggle="modal" data-target="#myModal-success" href="#myModal-success">Salir</a></li>
+	   </ul> 
+</div>
+ 
+<div class="row content-principal">
+	<div class="formlista row  col-xs-12 col-sm-12 col-md-5 fixed">
+		<form>
+				<div><img id="#blah" src="img/selecionarimg.png"></div>
+				<br><br>
+				<input class="hidden" accept="image/*" type='file' id="uploadfile" onchange="readURL();" />
+				<div class="question">
+						<input type="text" id="NombreProducto" maxlength="30" name="" placeholder="Nombre del Producto">
+				</div>
+				
+				<input type="text" name="" id="Presentacion" placeholder="Presentación (Cant. Paquete)"
+				onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="2">
+				
+				<input type="text" name="" id="Precio" placeholder="Precio Producto" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+				<!-- Disponible:  
+				Si<input type="checkbox" name="disponible"> 
+				No<input type="checkbox" name="disponible"> -->
+				
+				<div class="row">
+				<input type="button" name="" value="Nuevo" onclick="limpiar()">
+				<input type="button" id="btnGuardar" name="" value="Guardar Nuevo" onclick="Enviar()">
+					<input type="button" onclick="modificar()" name="" value="Modificar">
+					<input type="button" name="" value="Eliminar" onclick="eliminar()">
+				
+				</div>
+			</form>
+	</div>
+
+	<div class="row col-xs-8 col-xs-offset-1 col-md-7" id="main">		
+		<div class="listaproductos col-xs-6 col-sm-5 " id="lisprod">
+			<div >
+					<img src="images/productos/pico-piña.jpg">
+			</div>
+				<p>Pico de piña</p>
+			   <p> Paquete/uds: 24</p>
+				<p> Precio/bolsa: C$20</p>
+				
+		</div>
+		<div class="listaproductos col-xs-6 col-sm-5 ">
+			<div>
+				<img src="images/productos/enrollados.jpg" >
+			</div>
+				<p>Enrrollador</p>
+				<p> Paquete/uds: 24</p>
+				<p> Precio/bolsa: C$40</p>
+		</div>
+		<div class="listaproductos col-xs-6 col-sm-5 ">
+				<div>
+					<img src="images/productos/pan-queso-barra.jpg">
+				</div>
+				<p>Pan de queso</p>
+				<p>Paquete/uds:  24</p>
+				<p>Precio/bolsa:  C$15</p>
+		</div>
+		<div class="listaproductos col-xs-6 col-sm-5 ">
+				<div>
+					<img src="IMG/Pan de Hamburguesa pequeña.jpg">
+				</div>
+				<p>Hamburguesa</p>
+				<p>Paquete/uds:  12</p>
+				<p>Precio/bolsa:  C$25</p>
+				
+		</div>
+		<div class="listaproductos col-xs-6 col-sm-5 ">
+				<div>
+					<img src="images/productos/lenguas.jpg">
+				</div>
+				<p>Lenguas</p>
+				<p> Paquete/uds: 24</p>
+				<p> Precio/bolsa: C$20</p>
+				
+		</div>
+		<div class="listaproductos col-xs-6 col-sm-5 ">
+				<div>
+					<img src="IMG/chispitas.jpg">
+				</div>
+				<p>Chispitas</p>
+				<p> Paquete/uds: 24</p>
+				<p> Precio/bolsa: C$20</p>
+				
+		</div>
+		<div class="listaproductos col-xs-6 col-sm-5 ">
+				<div>
+					<img src="IMG/Torta de gato.jpg">
+				</div>
+				<p>Torta de piña</p>
+				<p> Paquete/uds: 24</p>
+				<p> Precio/bolsa: C$20</p>
+				
+		</div>
+		<div class="listaproductos col-xs-6 col-sm-5 ">
+			<div>
+				<img src="images/productos/polvorones.jpg">
+			</div>
+				<p>Polvorones</p>
+				<p> Paquete/uds: 24</p>
+				<p> Precio/bolsa: C$20</p>
+				
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.3.3.1.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.3.3.7.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/productos-modificacion.js"></script>
+<script src="js/producto-modificacion-code.js "></script>
+</body>
+</html>

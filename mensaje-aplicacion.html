@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="fuente/entypo/style.css">
+  <link rel="stylesheet" href="css/material-icon.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
   <link rel="stylesheet" href="css/mensaje-aplicacion.css">
@@ -12,41 +13,60 @@
   <title>Mensaje</title>
 </head>
 <body>
-<header>
-  <nav>
-   <div class="item-nav">
-      <a href="#" id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
-   </div>
-    <div class="item-nav">
-        <img   src="img/LogoPanaderia.png" alt="">
-    </div>
-   <div class="item-nav"> 
-     <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
-     <div><span class="item-right">Jorge Molina</span></div>
-   </div>
-  </nav>        
-  </header>
-  <div class="content-menu" id="content-menu">
-        <div class="menbrete">
-                <div class="imagen">
-                   <img src="img/jorge-perfil.png" alt="">
-                </div>
-                <div class="texto">
-                  <span>Jorge Molina</span>
-                  <span>Administrador</span>
-                </div>
-               </div>
-             <ul>
-                 <li><a href="dashboard.html">Inicio</a></li>
-                 <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
-                 <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
-                 <li><a href="pedido.html">Gestionar Pedido</a></li>
-                 <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
-                 <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
-                 <li class="cuenta"><a href="">Crear Cuenta</a></li>
-                 <li><a href="index.html">Salir</a></li>
-             </ul> 
+<!--Modal success-->
+<div id="myModal-success" class="modal fade">
+  <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+          <div class="modal-header-success">
+              <div class="icon-box-success">
+                  <i class="material-icons">&#xE887;</i>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+              <h4>¿ Esta seguro que desea salir?</h4>	
+              <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Cancelar</span> </button>
+              <a class="btn" href="login.html" id="btn-continuar" ><span>Aceptar</span> </a>
+          </div>
+      </div>
   </div>
+</div>
+<!--Final modal-->
+<header>
+<nav>
+<div class="item-nav">
+  <a id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+</div>
+<div class="item-nav">
+    <img   src="img/LogoPanaderia.png" alt="">
+</div>
+<div class="item-nav"> 
+ <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+ <div><span class="item-right">Jorge Molina</span></div>
+</div>
+</nav>        
+</header>
+<div class="content-menu" id="content-menu">
+<div class="menbrete">
+  <div class="imagen">
+           <img src="img/jorge-perfil.png" alt="">
+ </div>
+ <div class="texto">
+        <span>Jorge Molina</span>
+        <span>Administrador</span>
+</div>
+</div>
+      <ul>
+            <li><a href="dashboard.html">Inicio</a></li>
+            <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+            <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+            <li><a href="pedido.html">Gestionar Pedido</a></li>
+            <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+            <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+           <li class="cuenta"><a href="Iadmin.html">Crear Cuenta</a></li>
+           <li><a data-toggle="modal" data-target="#myModal-success" href="#myModal-success">Salir</a></li>
+     </ul> 
+</div>
   <div class="content-principal row">
       <div class="content-message col-xs-12">
           <h2><span class="icon-chat mensaje"></span> Enviar mensaje a Panaderia Molina</h2>
@@ -54,10 +74,10 @@
                <ul id="lista-mensaje">
                        <li id="men-num-0">
                                <div class="mensaje mensaje-user" id="mensaje-num-0">
-                               <div class="icon">
+                               <div class="icon hidden-xs">
                                <span class="icon-user"></span>
                                </div>
-                               <p class="title"> Panaderia Molina - Administrador</p>
+                               <p class="title hidden-xs"> Panaderia Molina - Administrador</p>
                                <p class="cuerpo"> Bienvenido, gracias por registrate en nuestra comunidad. Espero brindarte los productos que buscas para tus eventos con la mayor calidad como solo Panaderia Molina sabe hacerlo.
                                </p>
                                <p class="info-user">9:17 PM.</p>
@@ -65,7 +85,7 @@
                        </li>
                        <li id="men-num-1">
                                <div class="mensaje" id="mensaje-num-1">
-                               <div class="icon">
+                               <div class="icon hidden-xs">
                                <span class="icon-user"></span>
                                </div>
                                <p class="title"> Manuel de J. Lopez Acevedo</p>
@@ -81,7 +101,7 @@
                <textarea   cols="1" rows="1" id="mensaje-de-texto" placeholder="Escribir Mensaje"></textarea>
                </div>
                <div class="content-enviar col-xs-12 col-sm-3 col-md-4">
-                   <a href="#" id="btnEnviar" onclick=" Enviar();">Enviar</a>
+                   <a href="#" id="btnEnviar">Enviar</a>
                </div>
        </div>
   </div>

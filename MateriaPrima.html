@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fuente/entypo/style.css">
+    <link rel="stylesheet" href="css/material-icon.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/bread.png" />
+    <link rel="stylesheet" href="css/MateriaPrima.css">
+    <title>Gestionar Materia Prima</title>
+</head>
+<body>
+<!--Modal success-->
+<div id="myModal-oferta" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-confirm modal-lg">
+    <div class="modal-content">
+               <div class="modal-header-success  ">
+                <div class="row">
+                    <div class="mostrar-oferta">
+                          <span class="icon-info-with-circle icon"></span>
+                          <span>Lista de Ofertas</span>
+                    </div>
+                </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="panel panel-default">
+                  <div class="h1 panel-heading" id="pane-title-0">Oferta : Don Francisco </div>
+                  <div class="panel-body">
+                      <div class="form-group">
+                          <label for="comment">Harina</label>
+                          <p>
+                              Señor don juan, le propongo 4 quintales de trigo para el martes, veo que su inventario esta bajo.
+                          </p>
+                        </div>
+                  </div>
+                </div>   
+                <div class="panel panel-default">
+                  <div class="h1 panel-heading" id="pane-title-0">Oferta : Distribuidora Marcos </div>
+                  <div class="panel-body">
+                      <div class="form-group">
+                          <label for="comment">Azucar Blanca</label>
+                          <p>
+                              Don juan, tengo 300 libras de azucar blanca llameme porfavor para llevarlas.
+                          </p>
+                        </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="modal-footer text-center">
+                  <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Aceptar</span> </button>
+              </div>
+    </div>
+  </div>
+</div>
+
+<!--Final modal-->
+
+ <!--Modal success-->
+ <div id="myModal-success" class="modal fade">
+  <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+          <div class="modal-header-success">
+              <div class="icon-box-success">
+                  <i class="material-icons">&#xE887;</i>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+              <h4>¿ Esta seguro que desea salir?</h4>	
+              <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Cancelar</span> </button>
+              <a class="btn" href="login.html" id="btn-continuar" ><span>Aceptar</span> </a>
+          </div>
+      </div>
+  </div>
+</div>
+<!--Final modal-->
+<header>
+<nav>
+<div class="item-nav">
+  <a id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+</div>
+<div class="item-nav">
+    <img   src="img/LogoPanaderia.png" alt="">
+</div>
+<div class="item-nav"> 
+ <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+ <div><span class="item-right">Jorge Molina</span></div>
+</div>
+</nav>        
+</header>
+<div class="content-menu" id="content-menu">
+<div class="menbrete">
+  <div class="imagen">
+           <img src="img/jorge-perfil.png" alt="">
+ </div>
+ <div class="texto">
+        <span>Jorge Molina</span>
+        <span>Administrador</span>
+</div>
+</div>
+      <ul>
+            <li><a href="dashboard.html">Inicio</a></li>
+            <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+            <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+            <li><a href="pedido.html">Gestionar Pedido</a></li>
+            <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+            <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+           <li class="cuenta"><a href="Iadmin.html">Crear Cuenta</a></li>
+           <li><a data-toggle="modal" data-target="#myModal-success" href="#myModal-success">Salir</a></li>
+     </ul> 
+</div>
+    <div class="content-principal row">    
+<div class="component ">
+
+    <aside class="hidden-xs hidden-sm">
+        <div class="preamp">
+          <label>Leyenda</label>
+        </div>
+        <div class="leyenda">
+            <ul>
+              <li>
+                HAR: Harina <span class="li-valor"></span>
+              </li>
+              <li>
+                TRI: Trigo <span class="li-valor"></span>
+              </li>
+              <li>
+                LEV: Levadura <span class="li-valor"></span>
+              </li>
+              <li>
+                LEC: Leche <span class="li-valor"></span>
+              </li>
+              <li>
+                AZUM: Azucar Morena <span class="li-valor"></span>
+              </li>
+              <li>
+                AZUB: Azucar blanca <span class="li-valor"></span>
+              </li>
+              <li>
+                PI: Piña <span class="li-valor"></span>
+              </li>
+            </ul>
+          </div>
+      </aside>
+  
+    <main>
+      <div class="presets">
+        <label>Nivel de Inventario de la Materia prima</label>
+      </div>
+  
+      <div class="sliders">
+        
+        <svg preserveAspectRatio="none" viewBox="0 0 140 100">
+          <path d="" class="line-shadow"></path>
+          <path d="" class="line"></path>        
+        </svg>
+  
+        <div class="range-slider">
+          <input type="range" orient="vertical" min="0" max="100" />
+          <div class="range-slider__bar"></div>
+          <div class="range-slider__thumb"></div>
+           <label class="label-leyenda">HAR :<span class="label-valor"></span></label>
+        </div>
+  
+        <div class="range-slider">
+          <input type="range" orient="vertical" min="0" max="100" />
+          <div class="range-slider__bar"></div>
+          <div class="range-slider__thumb"></div>
+          <label class="label-leyenda">TRI :<span class="label-valor"></span></label>
+        </div>
+  
+        <div class="range-slider">
+          <input type="range" orient="vertical" min="0" max="100" />
+          <div class="range-slider__bar"></div>
+          <div class="range-slider__thumb"></div>
+          <label class="label-leyenda">LEV :<span class="label-valor"></span></label>
+        </div>
+  
+        <div class="range-slider">
+          <input type="range" orient="vertical" min="0" max="100" />
+          <div class="range-slider__bar"></div>
+          <div class="range-slider__thumb"></div>
+          <label class="label-leyenda">LEC :<span class="label-valor"></span></label>
+        </div>
+  
+        <div class="range-slider">
+          <input type="range" orient="vertical" min="0" max="100" />
+          <div class="range-slider__bar"></div>
+          <div class="range-slider__thumb"></div>
+          <label class="label-leyenda">AZUM :<span class="label-valor"></span></label>
+        </div>
+  
+        <div class="range-slider">
+          <input type="range" orient="vertical" min="0" max="100" />
+          <div class="range-slider__bar"></div>
+          <div class="range-slider__thumb"></div>
+          <label class="label-leyenda">AZUB :<span class="label-valor"></span></label>
+        </div>
+  
+        <div class="range-slider">
+          <input type="range" orient="vertical" min="0" max="100" />
+          <div class="range-slider__bar"></div>
+          <div class="range-slider__thumb"></div>
+          <label class="label-leyenda">PI :<span class="label-valor"></span></label>
+        </div>
+        
+      </div>
+    </main>    
+  </div>
+  <div class="panel-control row">
+   <div class="row">
+<div class="col-xs-7 col-sm-6 col-md-4">
+      <span class="titulo">
+        Nombre
+      </span>
+      <ul id="nombres">
+        <li>
+          <a data-toggle="modal" data-target="#myModal-oferta" href="#myModal-oferta">Harina</a>
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#myModal-oferta" href="#myModal-oferta">Trigo</a>
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#myModal-oferta" href="#myModal-oferta">Levadura</a> 
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#myModal-oferta" href="#myModal-oferta" >Leche</a>
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#myModal-oferta" href="#myModal-oferta">Azucar Morena</a> 
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#myModal-oferta" href="#myModal-oferta">Azucar Blanca</a> 
+        </li>
+        <li>
+          <a data-toggle="modal" data-target="#myModal-oferta" href="#myModal-oferta" >Piña</a> 
+        </li>
+      </ul>
+    </div>
+    <div class="hidden-sm hidden-xs col-md-1">
+        <span class="titulo">
+          Unidad
+        </span>
+        <ul  id="unidades">
+          <li>
+            <input type="text">
+          </li>
+          <li>
+              <input type="text">
+          </li>
+          <li>
+              <input type="text">
+          </li>
+          <li>
+              <input type="text">
+          </li>
+          <li>
+              <input type="text">
+          </li>
+          <li>
+              <input type="text">
+          </li>
+          <li>
+              <input type="text">
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-5 col-sm-3 col-md-2">
+          <span class="titulo">
+            Inv. Promedio
+          </span>
+          <ul  id="maximos_valores">
+            <li>
+              <input type="text">
+            </li>
+            <li>
+                <input type="text">
+            </li>
+            <li>
+                <input type="text">
+            </li>
+            <li>
+                <input type="text">
+            </li>
+            <li>
+                <input type="text">
+            </li>
+            <li>
+                <input type="text">
+            </li>
+            <li>
+                <input type="text">
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-2">
+            <span class="titulo">
+              Actual
+            </span>
+            <ul  id="valores">
+              <li>
+                
+              </li>
+              <li>
+                 
+              </li>
+              <li>
+                  
+              </li>
+              <li>
+                  
+              </li>
+              <li>
+                 
+              </li>
+              <li>
+                  
+              </li>
+              <li>
+                  
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-sm-offset-3 col-md-offset-0 col-md-2">
+            <span class="titulo">
+              Faltante
+            </span>
+            <ul  id="faltantes">
+              <li>
+                
+              </li>
+              <li>
+                 
+              </li>
+              <li>
+                  
+              </li>
+              <li>
+                  
+              </li>
+              <li>
+                 
+              </li>
+              <li>
+                  
+              </li>
+              <li>
+                  
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-1">
+            <span class="titulo">
+              Agregar
+            </span>
+            <ul  id="agregados">
+              <li>
+                <input type="text">
+              </li>
+              <li>
+                  <input type="text">
+              </li>
+              <li>
+                  <input type="text">
+              </li>
+              <li>
+                  <input type="text">
+              </li>
+              <li>
+                  <input type="text">
+              </li>
+              <li>
+                  <input type="text">
+              </li>
+              <li>
+                  <input type="text">
+              </li>
+            </ul>
+        </div>
+   </div>
+   <div class="row content-btn">
+     <div class="col-md-offset-3 col-xs-12 col-md-6">
+       <a  onclick="guardar_datos();">Guardar Cambios</a>
+     </div>
+   </div>
+  </div>
+   </div>
+    
+  <script src="js/jquery.min.3.3.1.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.3.3.7.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/MateriaPrima.js"></script>
+</body>
+</html>

@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="fuente/entypo/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/material-icon.css">
   <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/registrar-pedido.css">
@@ -12,41 +14,79 @@
   <title>Panaderia Molina</title>
 </head>
 <body>
-<header>
-  <nav>
-   <div class="item-nav">
-      <a href="#" id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
-   </div>
-    <div class="item-nav">
-        <img   src="img/LogoPanaderia.png" alt="">
+      <!--Modal success-->
+      <div id="myModal-venta" class="modal fade">
+            <div class="modal-dialog modal-confirm">
+                <div class="modal-content">
+                    <div class="modal-header-success">
+                        <div class="icon-box-success">
+                            <i class="material-icons">&#xE876;</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4>Se ha registrado la venta!</h4>	
+                        <p>La venta se ha registrado, es posible ver su estado en la gestion de venta.</p>
+                        <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Aceptar</span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Final modal-->
+  <!--Modal success-->
+  <div id="myModal-success" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header-success">
+                <div class="icon-box-success">
+                    <i class="material-icons">&#xE887;</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>¿ Esta seguro que desea salir?</h4>	
+                <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Cancelar</span> </button>
+                <a class="btn" href="login.html" id="btn-continuar" ><span>Aceptar</span> </a>
+            </div>
+        </div>
     </div>
-   <div class="item-nav"> 
-     <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
-     <div><span class="item-right">Jorge Molina</span></div>
-   </div>
-  </nav>        
-  </header>
-  <div class="content-menu" id="content-menu">
-        <div class="menbrete">
-                <div class="imagen">
-                   <img src="img/jorge-perfil.png" alt="">
-                </div>
-                <div class="texto">
-                  <span>Jorge Molina</span>
-                  <span>Administrador</span>
-                </div>
-               </div>
-             <ul>
-                 <li><a href="dashboard.html">Inicio</a></li>
-                 <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
-                 <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
-                 <li><a href="pedido.html">Gestionar Pedido</a></li>
-                 <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
-                 <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
-                 <li class="cuenta"><a href="">Crear Cuenta</a></li>
-                 <li><a href="index.html">Salir</a></li>
-             </ul> 
+</div>
+<!--Final modal-->
+<header>
+<nav>
+ <div class="item-nav">
+    <a id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+ </div>
+  <div class="item-nav">
+      <img   src="img/LogoPanaderia.png" alt="">
   </div>
+ <div class="item-nav"> 
+   <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+   <div><span class="item-right">Jorge Molina</span></div>
+ </div>
+</nav>        
+</header>
+<div class="content-menu" id="content-menu">
+  <div class="menbrete">
+    <div class="imagen">
+             <img src="img/jorge-perfil.png" alt="">
+   </div>
+   <div class="texto">
+          <span>Jorge Molina</span>
+          <span>Administrador</span>
+ </div>
+ </div>
+        <ul>
+              <li><a href="dashboard.html">Inicio</a></li>
+              <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+              <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+              <li><a href="pedido.html">Gestionar Pedido</a></li>
+              <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+              <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+             <li class="cuenta"><a href="Iadmin.html">Crear Cuenta</a></li>
+             <li><a data-toggle="modal" data-target="#myModal-success" href="#myModal-success">Salir</a></li>
+       </ul> 
+</div>
   <div class="content-main row">
     <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="pedidos">
@@ -155,12 +195,12 @@
     <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="informacion row">
                <div class="col-xs-2 col-sm-4 col-md-2"><label for="nombre-cliente"><span>Nombre: </span></div>
-               <div class="col-xs-7 col-sm-8 col-md-7"><input type="text" id="nombre-cliente" name="nombre-cliente" ></div>
+               <div class="col-xs-7 col-sm-8 col-md-7"><input type="text"  maxlength="40" id="nombre-cliente" name="nombre-cliente" ></div>
                <div class="col-xs-2 col-sm-4 col-md-3"><span>Codigo: </span><span>P002</span></div>
                <div class="col-xs-2 col-sm-3 col-md-2"><span>Telefono:</span></div>
-               <div class="col-xs-3 col-sm-4 col-md-4"><input type="text" name="telefono-cliente" id="telefono-cliente"></div>
+               <div class="col-xs-3 col-sm-4 col-md-4"><input type="text" maxlength="8" name="telefono-cliente" id="telefono-cliente"></div>
                <div class="col-xs-2 col-sm-4 col-md-2"> <label for="correo-cliente"><span>Correo:</span> </label></div>
-               <div class="col-xs-5 col-sm-8 col-md-4"><input type="text" name="correo-cliente" id="correo-cliente"></div>
+               <div class="col-xs-5 col-sm-8 col-md-4"><input type="email" maxlength="40"  style="width: 100%;height: 100%;" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" name="correo-cliente" id="correo-cliente"></div>
             </div>
             <div class="realizar ">
                     <div class="medio" id="content-lista-carro">
@@ -186,11 +226,11 @@
                                 <textarea name="comentario" maxlength="80"  id="text-comentario" cols="1" rows="1" placeholder="Agregar un comentario"></textarea>
                         </div>
                         <div class="col-xs-12 col-sm-5 col-md-4">
-                            <a href="" class="btnAgregar" id="btnAgregar"> Registrar </a>
+                            <a  class="btnAgregar" id="btnAgregar"> Registrar </a>
                         </div>
 
                         <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-2 col-md-8">
-                                <a href="#" class="satisfecho" id="btn" onclick="Enviar();">Enviar pedido</a>
+                                <a class="satisfecho" id="btn_enviar"  data-toggle="modal"  onclick="Enviar();">Enviar pedido</a>
                         </div>
                     </div>
                 </div> 
@@ -203,6 +243,7 @@
 <script src="js/menu.js"></script>
 <script src="js/registrar-pedido.js"></script>
 <script src="js/registrar-pedido-query.js"></script>
+
 </body>
 </html>
 

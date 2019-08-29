@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="fuente/entypo/style.css">
+    <link rel="stylesheet" href="css/material-icon.css">
     <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
      <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/pedido.css">
@@ -13,40 +14,59 @@
     <title>Gestionar pedido</title>
 </head>
 <body>
-        <header>
-                <nav>
-                 <div class="item-nav">
-                    <a href="#" id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
-                 </div>
-                  <div class="item-nav">
-                      <img   src="img/LogoPanaderia.png" alt="">
-                  </div>
-                 <div class="item-nav"> 
-                   <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
-                   <div><span class="item-right">Jorge Molina</span></div>
-                 </div>
-                </nav>        
-         </header>
-     <div class="content-menu" id="content-menu">
-                      <div class="menbrete">
-                              <div class="imagen">
-                                 <img src="img/jorge-perfil.png" alt="">
-                              </div>
-                              <div class="texto">
-                                <span>Jorge Molina</span>
-                                <span>Administrador</span>
-                              </div>
-                             </div>
-                           <ul>
-                               <li><a href="dashboard.html">Inicio</a></li>
-                               <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
-                               <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
-                               <li><a href="pedido.html">Gestionar Pedido</a></li>
-                               <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
-                               <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
-                               <li class="cuenta"><a href="">Crear Cuenta</a></li>
-                               <li><a href="index.html">Salir</a></li>
-                           </ul> 
+    <!--Modal success-->
+    <div id="myModal-success" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header-success">
+                    <div class="icon-box-success">
+                        <i class="material-icons">&#xE887;</i>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>¿ Esta seguro que desea salir?</h4>	
+                    <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Cancelar</span> </button>
+                    <a class="btn" href="login.html" id="btn-continuar" ><span>Aceptar</span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Final modal-->
+  <header>
+    <nav>
+     <div class="item-nav">
+        <a id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+     </div>
+      <div class="item-nav">
+          <img   src="img/LogoPanaderia.png" alt="">
+      </div>
+     <div class="item-nav"> 
+       <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+       <div><span class="item-right">Jorge Molina</span></div>
+     </div>
+    </nav>        
+    </header>
+    <div class="content-menu" id="content-menu">
+      <div class="menbrete">
+        <div class="imagen">
+                 <img src="img/jorge-perfil.png" alt="">
+       </div>
+       <div class="texto">
+              <span>Jorge Molina</span>
+              <span>Administrador</span>
+     </div>
+     </div>
+            <ul>
+                  <li><a href="dashboard.html">Inicio</a></li>
+                  <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+                  <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+                  <li><a href="pedido.html">Gestionar Pedido</a></li>
+                  <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+                  <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+                 <li class="cuenta"><a href="Iadmin.html">Crear Cuenta</a></li>
+                 <li><a data-toggle="modal" data-target="#myModal-success" href="#myModal-success">Salir</a></li>
+           </ul> 
     </div>
     <div class="content-main row">
         <div class="col-xs-12 col-sm-6 col-md-6">
@@ -226,9 +246,9 @@
                                 placeholder="Agregar un comentario"></textarea>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-5">
-                                        <a href="#" id="btnAgregar">Registrar</a>
-                                        <a href="#" onclick="Click_satisfecho();" class="satisfecho">Satisfecho</a>
-                                        <a href="#" onclick="Click_cancelado();" class="cancelado">Cancelado</a>
+                                        <a  id="btnAgregar">Registrar</a>
+                                        <a  onclick="Click_satisfecho();" class="satisfecho">Satisfecho</a>
+                                        <a  onclick="Click_cancelado();" class="cancelado">Cancelado</a>
                         </div>
                     </div>
                 </div>

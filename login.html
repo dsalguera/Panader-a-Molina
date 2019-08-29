@@ -8,6 +8,7 @@
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="fuente/entypo/style.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/bread.png"/>
 </head>
 
 <body>
@@ -16,23 +17,34 @@
 
             <h2>Panadería Molina</h2>
 
-            <input type="text" placeholder="Nombre de usuario" required>
-            <input type="password" placeholder="Contraseña" required>
+            <input type="text" maxlength="30" id="user" placeholder="Nombre de usuario" required>
+            <input type="password" maxlength="30" id="password" placeholder="Contraseña" required>
 
             <p class="recordar-sesion">
                 <label for="sesion">Recordar sesión
                     <input type="checkbox" name="sesion">
                 </label>
             </p>
-            <a href="index.html" class="boton">Iniciar Sesión</a>
-            <a href="dashboard.html" class="boton">Iniciar Sesión App</a>
-            <a href="#" class="boton regresar">Registrar</a>
+            <a  id="iniciarSesion" class="boton">Iniciar Sesión</a>
+            <a href="Isecion.html" class="boton regresar">Registrar</a>
             
         </form>
     </div>
     <div class="btnback">
             <a href="index - ns.html"><span class="icon-chevron-left"></span></a>
     </div>
+    <script type="text/javascript">
+    var btn_iniciar=document.getElementById("iniciarSesion");
+    btn_iniciar.addEventListener("click",function(){
+        if(document.getElementById("user").value.toUpperCase()=="CLIENTE"){
+            window.location.href="index.html";
+        }else if(document.getElementById("user").value.toUpperCase()=="ADM"){
+            window.location.href="dashboard.html";
+        }else{
+            alert("Usuario o Contraseña no valida.");
+        }
+    }) 
+       </script>
 </body>
 
 </html>
