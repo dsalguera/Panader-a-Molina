@@ -98,7 +98,7 @@
                         <div class="form-group">
                           <label>Dirección <small>(*)</small></label>
                           <textarea   maxlength="100" class="form-control campo_textarea" placeholder="Managua altamira"
-                            row="3" required>Managua altamira</textarea>
+                            row="3" required></textarea>
                         </div>
                       </div>
                       <div class="col-sm-4 col-sm-offset-1">
@@ -131,7 +131,7 @@
                         <div class="form-group">
                           <label>Teléfono</label>
                           <input type="text" class="form-control" onkeypress="return ValidarTelefono(event)"
-                            id="vtelefono" maxlength="8" placeholder="83342333" required>
+                            id="vtelefono" maxlength="8" minlength="8" placeholder="83342333" required>
                         </div>
                       </div>
 
@@ -149,19 +149,19 @@
                           <input type="password"  maxlength="30" class="form-control" placeholder=".........." required>
                         </div>
                       </div>
-                      <h4 class="info-text">Información básica donde laboró antes (*)</h4>
+                      <h4 class="info-text">Información básica donde laboró antes (opc)</h4>
                       <div class="col-sm-4 col-sm-offset-1">
                         <div class="form-group">
                           <label for="Uempresa">Dónde Laboro antes?</label>
                           <input type="text"  maxlength="30" class="form-control" placeholder="Panaderia Xiloa"
-                            onkeypress="return soloLetras(event)" required>
+                            onkeypress="return soloLetras(event)" >
                         </div>
                       </div>
 
                       <div class="col-sm-3">
                         <div class="form-group">
                           <label for="R1empresa" class="">Empezo en el año:</label>
-                          <select name="anio-inicio" id="anio-inicio" class="form-control" required>
+                          <select name="anio-inicio" id="anio-inicio" class="form-control">
                             <option hidden value="">Seleccione..</option>
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>
@@ -189,7 +189,7 @@
                       <div class="col-sm-3">
                         <div class="form-group">
                           <label for="R1empresa" class="">Finalizó en el año:</label>
-                          <select name="anio-fin" id="anio-fin" class="form-control" required>
+                          <select name="anio-fin" id="anio-fin" class="form-control" >
                             <option hidden value="">Seleccione..</option>
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>

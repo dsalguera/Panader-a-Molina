@@ -16,33 +16,34 @@
         <link rel="shortcut icon" href="img/bread.png"/>
     </head>
     <body>
-        <nav class="blue navbar navbar-expand-lg navbar-light fixed-top" color: #ffffff;""> 
-            <img src="images/logo.svg" class="img-fluid"> 
+        <nav class="blue navbar navbar-expand-sm navbar-light fixed-top" color: #ffffff;""> 
+            <img src="images/logo.svg" class="img-fluid_imagen"> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler61" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-toggler-icon"></span> 
             </button>             
             <div class="collapse navbar-collapse" id="navbarToggler61"> 
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
-                    <li class="nav-item active"> 
-                        <a class="nav-link text-white active" href="index - ns.html">INICIO <span class="sr-only">(current)</span></a> 
-                    </li>                     
-                    <li class="nav-item"> 
-                        <a class="nav-link text-white" href="productos.html">PRODUCTOS</a> 
-                    </li>
-                    <li class="nav-item"> 
+                <div class="container">
+                    <ul class="row navbar-nav mr-auto mt-2 mt-lg-0 lista-nav container"> 
+                        <li class="nav-item active"> 
+                            <a class="nav-link text-white active" href="index - ns.html">INICIO <span class="sr-only">(current)</span></a> 
+                        </li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link text-white" href="productos.html">PRODUCTOS</a> 
+                        </li>
+                        <li class="nav-item"> 
                             <a class="nav-link text-white" href="acerca-de.html">ACERCA DE</a> 
                         </li>
-                    <li class="nav-item"> 
-                        <a class="nav-link text-white" href="contacto.html">CONTACTO</a> 
-                    </li>                                     
-                </ul>
-                <div class="btn-group">
+                        <li class="nav-item"> 
+                            <a class="nav-link text-white" href="contacto.html">CONTACTO</a> 
+                        </li>                         
+                    </ul>
+                </div>
+                <div class="btn-group btn_style">
                     <a class="btn btn-primary" href="login.html">INICIAR SESIÓN</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Ir al carrito</a>
                         <a class="dropdown-item" href="#">Cerrar Sesión</a>
                     </div>
-                </div>               
+                </div>                 
             </div>
         </nav>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -62,11 +63,11 @@
             <h3 class="text-white">CONTACTO</h3>
         </div>
         <div class="row justify-content-around datos">
-            <div class="text-center col-md-3 col-xl-3 col-lg-4 IMG">
-                <h4 class="text-body">Ing. jorge Molina</h4>
-                <img src="images/XD/jorge.jpg" class="rounded-0 img-fluid"> 
+            <div class="text-center productos col-xl-3 col-lg-5 col-md-6">
+                <h4 class="text-body">Ing. Jorge Molina</h4>
+                <img style="background-color: #ffffff; margin: 4px; border-radius: 29px; border: 9px solid rgba(248, 255, 0, 0);" class="rounded-0 img-fluid" src="images/XD/jorge.jpg"> 
             </div>
-            <div class="text-center col-md-3 col-xl-3 col-lg-4 datos1">
+            <div class="text-center datos1 col-xl-4 col-lg-8 col-md-9">
                 <h5 class="text-body">Formulario de Contacto</h5>
                 <form>
                     <div class="form-group text-left">
@@ -87,7 +88,7 @@
                     <button type="submit" class="btn btn-primary">Contactáme</button>
                 </form>                 
             </div>
-            <div class="text-center col-md-3 col-xl-3 col-lg-4 productos">
+            <div class="text-center productos col-xl-3 col-lg-5 col-md-6">
                 <h4 class="text-body">Productos</h4>
                 <img style="background-color: #ffffff; margin: 4px; border-radius: 29px; border: 9px solid rgba(248, 255, 0, 0);" class="rounded-0 img-fluid" src="images/XD/productos.jpg"> 
             </div>
@@ -97,22 +98,23 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <footer>
             <div class="row justify-content-around">
-                <div class="col-lg-1 col-md-2 col-4">
-                    <img src="images/logo.svg" class="img-fluid"> 
+                <div class=" d-md-block d-none col-lg-1 col-md-2 col-4">
+                    <img src="images/logo.svg" class="img-fluid_imagen">
                 </div>
                 <div class="col-md-6 col-10">
                     <br>
-                    <h5>Panadería Molina - Todos los derechos reservados2019 - 2020 TM</h5> 
+                    <h5>Panadería Molina - Todos los derechos reservados2019 -
+                        2020 TM</h5>
                 </div>
                 <div class="col-md-4 text-right col-10">
                     <h5>+505 7852 8291
-Dirección: Reparto los Laureles, 
-terminal 118 1c. abajo 5crs. al Norte</h5> 
+                        Dirección: Reparto los Laureles,
+                        terminal 118 1c. abajo 5crs. al Norte</h5>
                 </div>
             </div>
         </footer>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>     
+        <script src="bootstrap/js/bootstrap.min.js"></script>         
     </body>
 </html>
