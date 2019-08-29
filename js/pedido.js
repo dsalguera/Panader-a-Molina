@@ -7,6 +7,7 @@ var lista_pedido=document.getElementById("lista-pedido").children;
     }
 }
 function click_pedido(){
+  
     var lista_pedido_parent=document.getElementById("lista-pedido");
     var lista_producto_parent=document.getElementById("lista-productos");
     var lista_pedido=document.getElementById("lista-pedido").children;
@@ -29,6 +30,7 @@ function click_pedido(){
     panel_informacion.getElementsByTagName("span")[3].children[1].innerHTML=this.getElementsByTagName("div")[1].getElementsByTagName("span")[3].innerHTML;
     panel_informacion.getElementsByTagName("span")[2].innerHTML=this.getElementsByTagName("div")[1].getElementsByTagName("span")[7].innerHTML;
     document.getElementsByClassName("realizar")[0].getElementsByClassName("medio")[0].getElementsByClassName("estado")[0].getElementsByTagName("span")[1].className=this.getElementsByTagName("div")[0].getElementsByTagName("span")[1].innerHTML.toLowerCase();
+    document.getElementsByClassName("realizar")[0].getElementsByClassName("medio")[0].getElementsByClassName("estado")[0].getElementsByTagName("span")[1].textContent=this.getElementsByTagName("div")[0].getElementsByTagName("span")[1].textContent;
     switch(indexselect){
         case 0:
             pedido_num_1();
@@ -206,4 +208,11 @@ function pedido_num_1(){
             }
         }
     }
+ }
+ function remplazar(cadena, salida, entrada){
+    var numero=cadena.length;
+   for(var i=0;i<numero;i++){
+       cadena=cadena.replace(salida,entrada);
+   }
+    return cadena;
  }

@@ -1,11 +1,16 @@
 
+  * {
+    font-family: 'Segoe UI';
+    font-weight: 300;
+}
+
 .formulario {
   border-radius: 10px;
   background-color: white;
   padding: 20px;
-
   box-shadow: 0.5px 15px rgba(0, 0, 0, 0);
 }
+
 .r {
   margin-bottom: 16px;
   display: flex;
@@ -34,6 +39,9 @@
   height: auto;
   padding: 10px;
   font-size: 16px;
+}
+.campo_textarea{
+  resize:none;
 }
 
 p {
@@ -64,8 +72,22 @@ p {
 
 .btn {
   margin-left: 9%;
- width: 80%;
-  background-color: #3D32AC;
+  width: 80%;
+  background-color: #3d32ac;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  border-width: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.bt{
+
+  width: 30%;
+  background-color: #3d32ac;
   color: #ffffff;
   border-radius: 25px;
   border: none;
@@ -91,19 +113,127 @@ p {
   width: 600px;
   margin: auto;
 }
-.image-container{
-  background-image: url("../images/fondo.jpg");
+.image-container {
+background-color:#3c32a4;
   background-repeat: no-repeat;
-width:100%;
-height:100%;
-margin:0;
-border:0;
-padding:0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
-.co{
-  margin-left: 23%;
-}
-input[type="checkbox"]{
+
+input[type="checkbox"] {
   transform: scale(1.3);
+}
+i {
+  position: absolute;
+  right: 3.6%;
+  width: 40px;
+  height: 40px;
+  color: black;
+  font-size: 45px;
+  border-radius:50%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+i:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  cursor: pointer;
+  color: #ffffff;
+}
+.wizard-container{
+  position: relative;
+}
+#close{
+  display:block;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: -60px;
+  position: absolute;
+  right: 10px;
+  color: rgb(61, 50, 172,0.5);
+  text-decoration: none;
+}
+#close span{
+ 
+  font-size: 4rem;
+  text-align: center;
+  display: block;
+}
+#close:hover{
+    -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(61, 50, 172);
+}
+
+.btnback{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 75px;
+  left:10px;
+}
+.btnback a{
+  display: block;
+  text-decoration: none;
+  background-color: rgb(221, 221, 221);
+  color: rgb(61, 50, 172);
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;   
+}
+.btnback a span{
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 3em;    
+}
+.btnback a:hover{
+  transform: translateY(4px);
+  color: white;
+  background-color: rgb(20, 17, 54,0.1);
+}
+.btnback a:active{
+  background-color:rgb(61, 50, 172,0.5);
+  transform: translate(-8px,4px);
+}
+.row{
+  margin-right: -15px;
+  margin: auto;
+}
+
+
+.wizard-card {
+    min-height: 410px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.modal-header{
+  background-color:  rgb(61, 50, 172); 
+  height: 50px;
 }

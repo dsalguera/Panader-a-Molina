@@ -1,0 +1,278 @@
+*{
+  font-family: 'Segoe UI';
+  font-weight: 300;
+}
+body{
+  font-size: 14px;
+}
+.navegacion {
+  padding: 0px;
+  margin: -8px;
+  height: 60px;
+  background-color: #3D32AC;
+  text-decoration-style: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile{
+  float: right; margin-left: 5px;
+  padding-top: 15px;
+  padding-right: 20px;
+  width: 30px;
+}
+
+.navegacion li:nth-of-type(1){
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.navegacion li:nth-of-type(3){
+  float: right;
+  padding-top: 20px;
+}
+.imgp{
+  position:absolute;
+  height: 4em;
+  display:block;
+  margin:auto;
+  left: 45%;
+  
+}
+.content-principal{
+  height: 100%;
+}
+
+.listaproductos{
+  
+  border: solid gray 2px;
+  border-radius: 20px;
+    padding: 2%;
+    margin-bottom: 3%;
+    padding-top: 3%;
+    margin-right: 3%;
+    margin-left: 5%;
+  box-sizing: border-box;
+  float: right;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+.listaproductos img{
+  border-radius: 5px;
+  width: 58%;
+  max-height: 80px;
+  max-width: 100px;
+  margin: auto;
+  display: block;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+.formlista{
+
+  /* border: solid black 1px; */
+  display: flex;
+  justify-content: center;
+  float: right;
+  border-radius: 25px;
+  /*padding-top: 40px; */
+  padding-left: 2%;
+  padding-bottom: 2%;
+  /* padding-right: 40px; */
+  margin-right: 0%;
+  /*margin-top: -2%; */
+  /* margin-left: 5%; */
+  -webkit-box-shadow: 0 15px 20px 3px rgb(139, 138, 138);
+         -moz-box-shadow: 0 15px 20px 3px rgb(139, 138, 138);
+              box-shadow: 0 15px 20px 3px rgb(139, 138, 138);
+  
+  /* margin-top: -55%;
+  margin-left: -40%; */
+}
+
+.formlista img{
+  box-shadow: 0 0 0 10px#FFEE00, 0 0 0 18px#3D32AC;
+  border-radius: 10px;
+  width: 40%;
+  margin-top: 30px;
+  margin-left: 30%;
+}
+.es{
+  float: right;
+}
+p{
+  margin-left: 10%;
+  margin-top: 0.9em;
+}
+
+input[type="text"]{
+  margin-left: 10%;
+  margin-top: 10px;
+  width: 80%;
+  /* display: block; */
+  /* box-sizing: border-box; */
+  padding: 6px 15px;
+  border-radius: 25px;
+  color: rgb(5, 5, 83);
+  font-weight: 100;
+  letter-spacing: 0.01em;
+
+}
+form input[type="text"]:focus {
+  outline: none;
+  /* color: black; */
+}
+
+input[type="button"]{
+  position: relative;
+  border-radius: 50px;
+  border: none;
+  margin: 2.5px 5%;
+  width: 40%;
+  background-color: #3D32AC;
+  color:white;
+  height: 30px;
+  
+}
+input[type="button"]:focus{
+  
+ outline: none;
+
+}
+input[type="checkbox"]{
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius : 0px;
+}
+input[type="checkbox"]:checked {
+  background-color: #2196F3;
+}
+input[type=file]{
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+input[type=file].hidden {
+
+  color: transparent;
+ 
+} 
+input[type=file]::-webkit-file-upload-button{
+  border: none;
+  height: 35px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  
+  border-radius: 25px;
+  color: white;
+  z-index: 1;
+  outline: 0;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: #3D32AC;
+}
+input[type=file]:focus{
+  outline: 0;
+}
+.fixed{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  float: right;
+  right: 0px;
+  top:80px;
+}
+
+.question{
+  width: 100%;
+  position: relative;
+}
+
+#btn-menu:hover{
+  color: white;
+}
+.formlista .row{
+margin-top:15px;
+}
+
+@media only screen and (max-width: 765px) {
+  .fixed {
+    position: relative;
+    display: block;
+    justify-content: center;
+    float: right;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    width: 80%;
+    margin-right:  10%;
+    margin-bottom: 30px;
+  }
+  input[type="button"]{
+    
+    width: 100%;
+    
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+li {
+  text-align: left;
+ 
+}
+
+li:last-child {
+  border-bottom: none;
+}
+.navegacion {
+    padding: 0px;
+    margin: -5px;
+    height: 50px;
+   
+    background-color: lightgrey;
+    text-decoration-style: none;
+    
+}
+.Img{
+  width: 90px; height: 80px;
+}
+
+.UlTablas{
+  padding: 5px; margin-bottom: 20px;
+  width: 200px;
+  border: 1px solid #555;
+  border-radius: 15px;
+}
+.profile {
+    width: 20px;
+}
+
+.botones li {
+    padding: 3px;
+} */
+

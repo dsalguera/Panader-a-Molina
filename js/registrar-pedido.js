@@ -1,5 +1,6 @@
 (function() {}())
 main();
+var btnEnviar=document.getElementById("btn_enviar");
 function main(){
     //Variable a usar
  var lista_productos=document.getElementById("lista-productos");   
@@ -82,8 +83,15 @@ function fecha() {
     return fecha;
 }
 
-
 function Enviar(){
+    if(remplazar(campoNombre.value," ","").length==0){
+        alert("Ingrese porfavor, un nombre para indentificar el pedido.");
+        return;
+    }
+    if(document.getElementById("correo-cliente").value.length!=0 && !document.getElementById("correo-cliente").validity.valid){
+        alert("Porfavor, Introducir un correo valido");
+        return;
+    }
     var lista_carro=document.getElementById("lista-carro");
     var cantidad=lista_carro.children.length-1;
     for(var i=0;i<cantidad;i++){
@@ -94,4 +102,46 @@ function Enviar(){
     nombre.value="";
     telefono.value="";
     correo.value="";
+    $("#myModal-venta").modal('show');
 }
+btnEnviar.addEventListener("mousedown",function(event){
+    var lista_carro=document.getElementById("lista-carro");
+    if(lista_carro.children.length<=1){
+        alert("Agrege al menos un producto para registra la venta");
+        event.preventDefault();
+    }
+});
+var campoNombre=document.getElementById("nombre-cliente");
+var campotelefono=document.getElementById("telefono-cliente");
+campoNombre.addEventListener("keypress",validarTexto);
+campotelefono.addEventListener("keypress",soloNumeros);
+function validarTexto(event){
+    if((event.keyCode>=65 && event.keyCode<=90) || (event.keyCode>=97 && event.keyCode<=122) || event.keyCode==32 || event.keyCode==164 || event.keyCode==165){
+    }else{
+      event.preventDefault();
+    }
+  }
+function soloNumeros(e)
+  {
+    if((e.keyCode>=48 && e.keyCode<=57) || e.keyCode==46){
+    }else{
+     e.preventDefault();
+    }
+  }
+
+  function remplazar(cadena, salida, entrada){
+    var numero=cadena.length;
+   for(var i=0;i<numero;i++){
+       cadena=cadena.replace(salida,entrada);
+   }
+    return cadena;
+ }
+
+
+  function validarEmail(valor) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+     return true;
+    } else {
+     return false;
+    }
+  }

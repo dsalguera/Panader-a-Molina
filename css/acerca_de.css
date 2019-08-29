@@ -48,8 +48,32 @@ nav div ul li a {
     background-color: #ffffff;
     margin-top: 20px;
     padding: 15px;
+    height: 60%;
     border-radius: 10px;
     text-align: left;
+    font-size: 4vw;
+}
+
+@media only screen and (min-width: 800px) {
+    .valores_items div p {
+        font-size: 2em;
+    }
+
+    #objetivos {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #objetivos {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .valores_items div p {
+        font-size: 4.5vw;
+    }
 }
 
 .RH {
@@ -64,11 +88,11 @@ nav div ul li a {
 }
 
 .RHC .RHC1 {
-    background-color: #fff;
     border-radius: 30px;
     border: 12px solid rgba(248, 255, 0, 0);
     box-shadow: 9px 0px 47px;
     margin: 32px;
+    background-image: url('../images/historia.jpg');
 }
 
 .RHC .RHC1 p {
@@ -76,7 +100,7 @@ nav div ul li a {
     margin-top: 20px;
     padding: 10px;
     border-radius: 30px;
-    font-family: Adamina;
+    font-family: Segoe UI;
 }
 
 .RHC .RHC2 {
@@ -107,4 +131,9 @@ footer div div img {
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
+}
+
+.perfil {
+    height: 450px;
+    background-size: cover;
 }

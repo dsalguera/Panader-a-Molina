@@ -6,6 +6,7 @@ $(document).on("ready",function(){
             $('#'+Idelemento).animate({scrollTop: scroll() },'300');
             var texto=document.getElementById("text-comentario");
             if(remplazar(texto.value," ","").length==0){
+                alert("Porfavor, ingrese algun mensaje");
                return; 
             }
             var comentario=document.getElementById("lista-productos").children;
@@ -24,17 +25,8 @@ $(document).on("ready",function(){
     }
     function remplazar(cadena, salida, entrada){
         var dim=cadena.length;
-            for(var i=0;i<dim;i++){
-            if(i+salida.length<dim && cadena.substring(i,i+salida.length)==salida){
-                if(i==0){
-                    cadena=entrada+cadena.substring(i+1,cadena.length);
-                }else if(i==dim-1){
-                    cadena=cadena.substring(0,i-1)+entrada;
-                }else{
-                    cadena=cadena.substring(0,i-1)+entrada+cadena.substring(i+1,cadena.length);
-                }
-                i=i-1;
-            }
+         for(var i=0;i<dim;i++){
+         cadena=cadena.replace(salida,entrada);
         }
         return cadena;
        }

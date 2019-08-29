@@ -49,7 +49,10 @@ header nav .item-nav:nth-of-type(1) a{
     -moz-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
-
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 header nav .item-nav:nth-of-type(1) a span{
     font-size: 3.5em;
 }
@@ -64,11 +67,9 @@ header nav .item-nav:nth-of-type(3) div{
     float: right;
     height: 100%;
     width: 30%;
-    min-width: 70px;
 }
 header nav .item-nav:nth-of-type(3) div:nth-of-type(2){
     width: 70%;
-    min-width: 150px;
 }
 header nav .item-nav:nth-of-type(3) div:nth-of-type(1) img{
     display: block;
@@ -145,11 +146,7 @@ header nav .item-nav:nth-of-type(3) div:nth-of-type(2) span{
      
      margin-top: 10px;
    }
- 
 
-   .content-menu ul li.cuenta{
-       margin-top:100px;
-   }
    
    .content-menu ul li.cuenta a{
        background-color: rgb(235, 235, 5);
@@ -240,6 +237,8 @@ header nav .item-nav:nth-of-type(3) div:nth-of-type(2) span{
         display: block;
         width: 100%;
         height: 100%;
+        overflow: auto;
+        padding-bottom: 30px;
         border-radius: 30px;
         background-color: rgb(61, 50, 172,0.3);
         
@@ -347,5 +346,128 @@ header nav .item-nav:nth-of-type(3) div:nth-of-type(2) span{
       width: 100%;
       text-align: center;
   }
+}
+
+ /*modal para dialog*/
+ .modal-confirm {		
+    color: #434e65;
+    width: 525px;
+}
+.modal-confirm .modal-content {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+.modal-confirm .modal-header-success {
+    background: rgb(61, 50, 172);
+    border-bottom: none;   
+    position: relative;
+    text-align: center;
+    margin: -20px -20px 0;
+    border-radius: 5px 5px 0 0;
+    padding: 35px;
+}
+.modal-confirm h4 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px 0;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+    min-height: 40px;
+    border-radius: 3px; 
+}
+.modal-confirm .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    text-shadow: none;
+    opacity: 0.5;
+}
+.modal-confirm .close:hover {
+    opacity: 0.8;
+}
+.modal-confirm .icon-box-success {
+    color: #fff;		
+    width: 95px;
+    height: 95px;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 9;
+    border: 5px solid #fff;
+    padding: 15px;
+    text-align: center;
+}
+.modal-confirm .icon-box-success i {
+    font-size: 64px;
+    margin: -4px 0 0 -4px;
+}
+.modal-confirm.modal-dialog {
+    margin-top: 80px;
+}
+.modal-confirm .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: rgb(61, 50, 172);
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 6px 20px;
+    border: none;
+}
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+    background: rgb(61, 50, 172,0.6);
+    outline: none;
+}
+.modal-confirm .btn span {
+    margin: 1px 3px 0;
+    float: left;
+}
+.modal-confirm .btn i {
+    margin-left: 1px;
+    font-size: 20px;
+    float: right;
+}
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+.btnback{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 75px;
+    left:10px;
+}
+.btnback a{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(61, 50, 172,0.1);
+    color: rgb(61, 50, 172,0.6);
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;   
+}
+.btnback a span{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 3em;    
+}
+.btnback a:hover{
+    transform: translateY(4px);
+    color: white;
+    background-color: rgb(61, 50, 172);
+}
+.btnback a:active{
+    background-color:rgb(61, 50, 172,0.5);
+    transform: translate(-8px,4px);
 }
 

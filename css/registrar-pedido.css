@@ -172,6 +172,7 @@
     }
     .content-main .informacion> div{
         margin-top: 5px;
+        height: 20px;
     }
     label,input[type="text"], .content-main .informacion span{
         width: 95%;
@@ -282,7 +283,4 @@
         list-style: none;
     }
 
-   
-    @media screen and (max-width: 640px){
-        
-    }
+  
