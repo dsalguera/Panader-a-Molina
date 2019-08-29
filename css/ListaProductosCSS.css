@@ -102,6 +102,7 @@ ul {
   box-shadow: 0 0 0 10px#FFEE00, 0 0 0 18px#3D32AC;
   border-radius: 10px;
   width: 40%;
+  max-height: 150px;
   margin-top: 30px;
   margin-left: 30%;
 }

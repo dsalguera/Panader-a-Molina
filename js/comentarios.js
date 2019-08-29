@@ -59,14 +59,17 @@ btnEnviarComentario.addEventListener("click", function() {
     div.appendChild(button);
     //document.body.appendChild(lista);
 
+    button.addEventListener("click",Eliminarli);
+
     document.getElementById("txtcomentario").value = "";
 });
 
 
-
 var btnEliminar = document.getElementsByClassName("btnElim");
 for (var i = 0; btnEliminar.length; i++) {
-    btnEliminar[i].addEventListener("click", function() {
-        this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
-    });
+    btnEliminar[i].addEventListener("click",Eliminarli);
+}
+  
+function Eliminarli(){
+    this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
 }

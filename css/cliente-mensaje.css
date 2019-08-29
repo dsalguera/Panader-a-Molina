@@ -302,5 +302,14 @@ div.mensaje-user div.icon-us {
 }
 
 .fondo-azul {
-    background-color: ;
+    background-color:rgb(60, 50, 164,0.6) ;
+}
+.title {
+    color: #FFF;
+    background-color: transparent;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-family: segoe UI;
 }

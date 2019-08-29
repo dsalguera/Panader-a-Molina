@@ -283,4 +283,8 @@
         list-style: none;
     }
 
-  
+    .modal-confirm {
+        color: #434e65;
+        max-width: 525px;
+        width: 95%;
+      }

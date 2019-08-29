@@ -1,4 +1,3 @@
-
 main();
 function main(){
 var lista_pedido=document.getElementById("lista-pedido").children;
@@ -53,28 +52,28 @@ function pedido_num_1(){
     var  lista_producto=document.getElementById("lista-productos").children;
      //crear variable
      var li1=document.createElement("li");
-     var top='<div class="medio-productos"> <div><img src="img/Pico de piña.jpg" alt=""></div>',
+     var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Pico de piña.jpg" alt=""></div>',
      middle='<div> <span>Nombre: Paquete de Piña</span> <span>Paquete: 24 unds.</span>   <span>Precio: C$ 20/bolsa.</span> </div>',
      down='<div> <span>Cantidad: 4</span> </div> </div>'; 
      li1.innerHTML=top+middle+down;
      lista_producto_parent.appendChild(li1);
  
      var li2=document.createElement("li");
-     var top='<div class="medio-productos"> <div><img src="img/Pan de Hot Dog.jpg" alt=""></div>',
+     var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Pan de Hot Dog.jpg" alt=""></div>',
      middle='<div> <span>Nombre: Pan de molde de barra</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 20/bolsa.</span> </div>',
      down='<div> <span>Cantidad: 5</span> </div> </div>'; 
      li2.innerHTML=top+middle+down;
      lista_producto_parent.appendChild(li2);
  
      var li3=document.createElement("li");
-     var top='<div class="medio-productos"> <div><img src="img/Punto Rojo.jpg" alt=""></div>',
+     var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Punto Rojo.jpg" alt=""></div>',
      middle='<div> <span>Nombre: Paquete de Piña</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 12/bolsa.</span> </div>',
      down='<div> <span>Cantidad: 2</span> </div> </div>'; 
      li3.innerHTML=top+middle+down;
      lista_producto_parent.appendChild(li3);
  
      var li4=document.createElement("li");
-     var top='<div class="medio-productos"> <div><img src="img/Torta de gato.jpg" alt=""></div>',
+     var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Torta de gato.jpg" alt=""></div>',
      middle='<div> <span>Nombre: Torta de gato</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 30/bolsa.</span> </div>',
      down='<div> <span>Cantidad: 7</span> </div> </div>'; 
      li4.innerHTML=top+middle+down;
@@ -90,21 +89,21 @@ function pedido_num_1(){
      var  lista_producto=document.getElementById("lista-productos").children;
       //crear variable
       var li1=document.createElement("li");
-      var top='<div class="medio-productos"> <div><img src="img/chispitas.jpg" alt=""></div>',
+      var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/chispitas.jpg" alt=""></div>',
       middle='<div> <span>Nombre: Chispitas </span> <span>Paquete: 20 unds.</span>   <span>Precio: C$ 25/bolsa.</span> </div>',
       down='<div> <span>Cantidad: 2</span> </div> </div>'; 
       li1.innerHTML=top+middle+down;
       lista_producto_parent.appendChild(li1);
   
       var li2=document.createElement("li");
-      var top='<div class="medio-productos"> <div><img src="img/Punto Rojo.jpg" alt=""></div>',
+      var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Punto Rojo.jpg" alt=""></div>',
       middle='<div> <span>Nombre: Punto rojo</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 12/bolsa.</span> </div>',
       down='<div> <span>Cantidad: 3</span> </div> </div>'; 
       li2.innerHTML=top+middle+down;
       lista_producto_parent.appendChild(li2);
   
       var li4=document.createElement("li");
-      var top='<div class="medio-productos"> <div><img src="img/Torta de gato.jpg" alt=""></div>',
+      var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Torta de gato.jpg" alt=""></div>',
       middle='<div> <span>Nombre: Torta de gato</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 30/bolsa.</span> </div>',
       down='<div> <span>Cantidad: 1</span> </div> </div>'; 
       li4.innerHTML=top+middle+down;
@@ -123,20 +122,20 @@ function pedido_num_1(){
      var  lista_producto=document.getElementById("lista-productos").children;
       //crear variable
       var li1=document.createElement("li");
-      var top='<div class="medio-productos"> <div><img src="img/EspecialNav.PNG" alt=""></div>',
+      var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/EspecialNav.PNG" alt=""></div>',
       middle='<div> <span>Nombre: Chispitas </span> <span>Paquete: 1 unds.</span>   <span>Precio: C$ 50</span> </div>',
       down='<div> <span>Cantidad: 2</span> </div> </div>'; 
       li1.innerHTML=top+middle+down;
       lista_producto_parent.appendChild(li1);
       var li2=document.createElement("li");
-      var top='<div class="medio-productos"> <div><img src="img/Pan de Hot Dog.jpg" alt=""></div>',
+      var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Pan de Hot Dog.jpg" alt=""></div>',
       middle='<div> <span>Nombre: Pan de molde de barra</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 20/bolsa.</span> </div>',
       down='<div> <span>Cantidad: 1</span> </div> </div>'; 
       li2.innerHTML=top+middle+down;
       lista_producto_parent.appendChild(li2);
   
       var li3=document.createElement("li");
-      var top='<div class="medio-productos"> <div><img src="img/Punto Rojo.jpg" alt=""></div>',
+      var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Punto Rojo.jpg" alt=""></div>',
       middle='<div> <span>Nombre: Paquete de Piña</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 12/bolsa.</span> </div>',
       down='<div> <span>Cantidad: 4</span> </div> </div>'; 
       li3.innerHTML=top+middle+down;
@@ -153,14 +152,14 @@ function pedido_num_1(){
     var  lista_producto=document.getElementById("lista-productos").children;
      //crear variable
      var li1=document.createElement("li");
-     var top='<div class="medio-productos"> <div><img src="img/Pico de piña.jpg" alt=""></div>',
+     var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Pico de piña.jpg" alt=""></div>',
      middle='<div> <span>Nombre: Paquete de Piña</span> <span>Paquete: 24 unds.</span>   <span>Precio: C$ 20/bolsa.</span> </div>',
      down='<div> <span>Cantidad: 1</span> </div> </div>'; 
      li1.innerHTML=top+middle+down;
      lista_producto_parent.appendChild(li1);
  
      var li4=document.createElement("li");
-     var top='<div class="medio-productos"> <div><img src="img/Torta de gato.jpg" alt=""></div>',
+     var top='<div class="medio-productos"> <div class="hidden-xs"><img src="img/Torta de gato.jpg" alt=""></div>',
      middle='<div> <span>Nombre: Torta de gato</span> <span>Paquete: 12 unds.</span>   <span>Precio: C$ 30/bolsa.</span> </div>',
      down='<div> <span>Cantidad: 1</span> </div> </div>'; 
      li4.innerHTML=top+middle+down;

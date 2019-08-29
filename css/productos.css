@@ -3,16 +3,6 @@
     transition: 1s;
 }
 
-nav div {
-    text-align: center;
-}
-
-nav div ul li a {
-    text-align: center;
-    font-family: Segoe UI;
-    font-weight: lighter;
-}
-
 .Nproductos {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,16 +49,6 @@ nav div ul li a {
     background-color: #3c32a4;
 }
 
-footer {
-    background-color: #3c32a4;
-}
-
-footer div div img {
-    width: 100px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-}
 
 .title {
     color: #FFF;
@@ -287,7 +267,6 @@ and (max-width: 1400px){
 
     .btn.btn-primary {
         width: 80%;
-        height: 16%;
     }
 
     #span-icon-bowl {
@@ -379,4 +358,113 @@ and (max-width: 1400px){
         font-size: 21px;
     }
     
+}
+
+
+/*Agregado*/
+footer div div:nth-of-type(2) h5 {
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: 300;
+    font-size: 120%;
+}
+}
+@media (min-width: 89px){
+    .navbar-expand-sm .navbar-nav .nav-link {
+    
+        font-size: 1.2em;
+    }
+    }
+.img_style1{
+ width: 60px;
+ display: block;
+ float: left;
+}
+
+@media (min-width: 835px){
+    .navbar-expand-sm .navbar-nav .nav-link {
+    
+        font-size: 1.2em;
+    }
+    }
+.img-fluid_imagen {
+    width: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+    z-index: 1;
+}
+.btn_style{
+    width:35%; 
+    max-width:400px;
+    min-width: 120px;
+    margin-top: 10px;
+}
+.btn_style1{
+ margin: auto;
+ padding-left: 30px;
+}
+.img_style1{
+ width: 60px;
+ display: block;
+ float: left;
+}
+
+.comentario_face{
+    padding-bottom:30px;
+}
+.comentario_face>div{
+    display: block;
+}
+
+
+.row {
+ 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0px;
+}
+.contenedor_navbar{
+    font-size: 1rem;
+}
+
+@media (max-width: 922px){
+    .img_style1{
+        display: none;
+       }
+}
+
+@media (max-width: 800px){
+    .btn_style{
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 850px){
+    .contenedor_navbar{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 700px){
+    .contenedor_navbar{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 600px){
+    .contenedor_navbar{
+        font-size: 0.6rem;
+    }
+}
+.modal-confirm.modal-dialog {
+    margin-top: 80px;
+    width: 95%;
+}
+
+
+#btn-agregar {
+    color: white;
 }

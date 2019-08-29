@@ -302,7 +302,7 @@ if (!String.prototype.format) {
       lista_agregados[i].value="";
     }
     iniciar();
-    alert("Se guardo sastisfactoriamente");
+    $("#myModal").modal("show");
   }
 
 

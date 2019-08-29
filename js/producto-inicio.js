@@ -7,10 +7,15 @@ var btnAgregar = document.getElementById("btn-agregar");
 
 asignar_productos();
 
-btnAgregar.addEventListener("mousedown", function(event) {
+btnAgregar.addEventListener("click", function(event) {
     if (campo.value == 0 || campo.value.length == 0) {
-        alert("Ingrese la cantidad");
         event.preventDefault();
+        alert("Ingrese la cantidad");
+       
+    }else{
+        $("#myModal").modal("hide");
+        $("#myModal-success").modal("show");
+       
     }
 
 });
@@ -48,6 +53,7 @@ function asignar_productos() {
         btn.dataset.toggle = "modal";
         btn.dataset.target = "#myModal";
     }
+ 
 }
 
 function myFunction() {

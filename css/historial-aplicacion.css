@@ -201,3 +201,8 @@ label{
     display: inline-block;
     margin: 100px auto;
 }
+.modal-confirm {
+    color: #434e65;
+    max-width: 525px;
+    width: 95%;
+}
