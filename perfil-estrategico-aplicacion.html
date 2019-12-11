@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
   <link rel="stylesheet" href="css/perfil-estrategico-aplicacion.css">
+  <link rel="stylesheet" href="css/ListaProductosCSS.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/bread.png" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,7 +28,7 @@
                     <div class="modal-body text-center">
                         <h4>Se ha actualizado el perfil estrategico!</h4>	
                         <p>La información de su empresa se ha actualizado, y sera visible para sus clientes en el area "acerca de".</p>
-                        <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Continuar</span> <i class="material-icons">&#xE5C8;</i></button>
+                        <button class="btn" onclick="btnguar()" id="btn-continuar" data-dismiss="modal"><span>Continuar</span> <i class="material-icons">&#xE5C8;</i></button>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@
         </div>
       </div>  
       <div class="panel panel-default">
-        <div class="h1 panel-heading" id="pane-title-0">Objectivos</div>
+        <div class="h1 panel-heading" id="pane-title-0">Objetivos</div>
         <div class="panel-body">
             <div class="form-group">
                 <label for="comment">¿Que debemos hacer para llegar ahí?</label>
@@ -127,10 +128,41 @@
                 </div>
               </div>
         </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="h1 panel-heading" id="pane-title-0">Reseña histórica</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="comment">¿Cuál es la historia de su negocio?</label>
+                <div class="content-text-area">
+                    <textarea class="form-control" rows="1" id="text-mision"id="comment">Hace 16 años que inicio operaciones la panadería, la idea provino de la esposa de Jorge Molina quien le había recomendado empezar un negocio ya que se había quedado sin empleo.
+
+                        Jorge Molina comenzo con un capital de C$700.00 tras su liquidación y unos C$20,000.00 en forma de prestámo financiero, el y su esposa emprendieron el paso a comenzar el negocio para así recuperarse.
+                        
+                        Antes se producía alrededor de 19 bolsas de panes al día. Actualmente, se producen más 1711 Panes variados en todas las categorías, dándole así una variedad de degustación a cada uno de sus clientes.
+
+                    </textarea>
+                </div>
+              </div>
+        </div>
       </div>  
+      <div class="panel panel-default">
+            <div class="h1 panel-heading" id="pane-title-0">Suba una imagen a la reseña histórica</div>
+      <br><br>
+      <div class="imghist">
+          <form>
+              <div><img class="blah" id = "#blah" src="img/selecionarimg.png"></div>
+              <br><br>
+              <input class="" accept="image/*" type='file' id="uploadfile"
+                  onchange="readURL2();" />
+          </form>
+          <br><br>
+      </div>
+    </div>
+
       <div class="botones row  ">
           <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4">
-              <a href="#myModal-save" data-toggle="modal" data-target="#myModal-save" id="btn-save" class=" btn btn-primary" >Guardar</a>
+              <a href="#myModal-save" data-toggle="modal" data-target="#myModal-save" id="btn-save" class=" btn btn-primary">Guardar</a>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
               <a href="dashboard.html" class="btn btn-danger">Cancelar</a>
@@ -145,6 +177,8 @@
 <script src="js/bootstrap.min.3.3.7.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/perfil-estrategico-aplicacion.js"></script>
+<script src="js/productos-modificacion.js"></script>
+<script src="js/producto-modificacion-code.js "></script>
 </body>
 </html>
 

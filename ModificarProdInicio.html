@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fuente/entypo/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/material-icon.css">
+  <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/ModificarProdInicio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/bread.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Panaderia Molina</title>
+</head>
+<body>
+      <!--Modal success-->
+      <div id="myModal-venta" class="modal fade">
+            <div class="modal-dialog modal-confirm">
+                <div class="modal-content">
+                    <div class="modal-header-success">
+                        <div class="icon-box-success">
+                            <i class="material-icons">&#xE876;</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4>Se han añadido las imagenes</h4>	
+                        <p>Regrese a la página "Acerca de" para ver los cambios!!.</p>
+                        <button class="btn" id="btn-continuar" data-dismiss="modal" onclick="okey()"><span>Aceptar</span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Final modal-->
+  <!--Modal success-->
+  <div id="myModal-success" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header-success">
+                <div class="icon-box-success">
+                    <i class="material-icons">&#xE887;</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>¿ Esta seguro que desea salir?</h4>	
+                <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Cancelar</span> </button>
+                <a class="btn" href="login.html" id="btn-continuar" ><span>Aceptar</span> </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Final modal-->
+<header>
+<nav>
+ <div class="item-nav">
+    <a id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+ </div>
+  <div class="item-nav">
+      <img   src="img/LogoPanaderia.png" alt="">
+  </div>
+ <div class="item-nav"> 
+   <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+   <div><span class="item-right">Jorge Molina</span></div>
+ </div>
+</nav>        
+</header>
+<div class="content-menu" id="content-menu">
+  <div class="menbrete">
+    <div class="imagen">
+             <img src="img/jorge-perfil.png" alt="">
+   </div>
+   <div class="texto">
+          <span>Jorge Molina</span>
+          <span>Administrador</span>
+ </div>
+ </div>
+        <ul>
+              <li><a href="dashboard.html">Inicio</a></li>
+              <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+              <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+              <li><a href="pedido.html">Gestionar Pedido</a></li>
+              <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+              <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+             <li class="cuenta"><a href="Iadmin.html">Crear Cuenta</a></li>
+             <li><a data-toggle="modal" data-target="#myModal-success" href="#myModal-success">Salir</a></li>
+       </ul> 
+</div>
+  <div class="content-main row">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="pedidos">
+                    <ul id="lista-productos">
+                        <li>
+                            <div class="imagen">
+                                <img src="img/Pan de Hot Dog.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span>Pan Hot Dog</span>
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                            </div>
+                            <div class="simbolo">
+                                <span class="icon-circle-with-plus" ></span>
+                            </div>
+                         </li> 
+                         <li>
+                            <div class="imagen">
+                                    <img src="img/Pico de piña.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span>Pico de piña</span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="simbolo">
+                               <span class="icon-circle-with-plus"></span>
+                           </div>         
+                        </li>
+                         <li>
+                              <div class="imagen">
+                                 <img src="img/Punto Rojo.jpg" alt="">
+                             </div>
+                                 <div class="info">
+                                     <span>Punto rojo</span>
+                                      <span></span>
+                                      <span></span>
+                                      <span></span>
+                                 </div>
+                                 <div class="simbolo">
+                                     <span class="icon-circle-with-plus"></span>
+                                 </div>
+                          </li>
+                          <li>
+                                 <div class="imagen">
+                                    <img src="img/Torta de gato.jpg" alt="">
+                                </div>
+                                    <div class="info">
+                                        <span>Torta de gato</span>
+                                         <span></span>
+                                         <span></span>
+                                         <span></span>
+                                    </div>
+                                    <div class="simbolo">
+                                        <span class="icon-circle-with-plus"></span>
+                                    </div>
+                          </li>
+                          <li>
+                                 <div class="imagen">
+                                    <img src="img/Pan de Hamburguesa pequeña.jpg" alt="">
+                                </div>
+                                    <div class="info">
+                                        <span>Hamburguesa</span>
+                                         <span></span>
+                                         <span></span>
+                                         <span></span>
+                                    </div>
+                                    <div class="simbolo">
+                                        <span class="icon-circle-with-plus"></span>
+                                    </div>
+                          </li>      
+                          <li>
+                            <div class="imagen">
+                               <img src="img/chispitas.jpg" alt="">
+                           </div>
+                               <div class="info">
+                                   <span>Chispitas</span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                               </div>
+                               <div class="simbolo">
+                                   <span class="icon-circle-with-plus"></span>
+                               </div>
+                         </li>   
+                         <li>
+                            <div class="imagen">
+                               <img src="img/EspecialNav.PNG" alt="">
+                           </div>
+                               <div class="info">
+                                   <span>Pan Navideño</span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                               </div>
+                               <div class="simbolo">
+                                   <span class="icon-circle-with-plus"></span>
+                               </div>
+                         </li>          
+                  </ul>
+             </div>
+    </div>    
+    <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="informacion row">
+               <h1>Las imagenes aparecerán en este cuadro, elija las imágenes del inicio de la página</h1>
+            </div>
+            <div class="realizar ">
+                    <div class="medio" id="content-lista-carro">
+                       <ul id="lista-carro">
+                           
+                             <li class="ste">
+                                     <div class="imagen">
+                                             <img src="img/icon-user-comentario.png" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <span>Comentario</span>
+                                         <span>Usted puede registrar alguna observacion importante del pedido.</span>
+                                     </div>
+                                     <div class="simbolo">
+                                        <span class="icon-chat"></span>
+                                        <span>Fecha: 4-07-2019</span>
+                                    </div>         
+                             </li>
+                          </ul>
+                     </div>
+                    <div class="bajo row">
+
+                        <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-2 col-md-8">
+                                <a class="satisfecho" id="btn_enviar"  data-toggle="modal"  onclick="Enviar();">Guardar imagenes</a>
+                        </div>
+                    </div>
+                </div> 
+    </div>
+        
+</div> 
+<script src="js/jquery.min.3.3.1.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.3.3.7.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/ModificarPedidoInicio.js"></script>
+<!--<script src="js/registrar-pedido-query.js"></script>-->
+
+</body>
+</html>
+
