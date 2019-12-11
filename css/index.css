@@ -1,4 +1,4 @@
-.fondo-azul {
+﻿.fondo-azul {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #3c32a4;
@@ -185,12 +185,12 @@ body {
         font-size: 120%;
     }
 
-    .fondo-galeria {
-        border-radius: 25px;
-        padding: 1%;
-        box-shadow: 0px 0px 10px;
-    }
-
+.fondo-galeria {
+    border-radius: 25px;
+    max-width: 1000px;
+    padding: 1%;
+    box-shadow: 0px 0px 10px;
+}
 
 }
 
@@ -364,9 +364,10 @@ body {
 }
 
 /*Código responsive*/
-@media screen and (min-width:320px) and (max-width:466px){
+@media screen and (min-width:100px) and (max-width:466px){
     #btnordenars{
-        top: 1.4em;
+        top: 0.4em;
+        left: -0.4em;
     }
     #divss{
         margin: 12px 140px 77px;
@@ -379,7 +380,7 @@ body {
 
     #span-icon-shops{
         top: -0.2em;
-    left: 0.9em;
+    left: 0;
     }
 
      #divs {
@@ -558,4 +559,63 @@ footer div div:nth-of-type(2) h5 {
 .buttonA:hover {
     color: #FFF;
     background-color: #28216D;
+}
+
+/* agregado de manuel para la feria*/
+
+@media screen and (min-width:467px) and (max-width:558px){
+    #span-icon-shops {
+        position: relative;
+        top: -0.7em;
+        left: -0.2em;
+        font-size: 50px;
+        color: #ffffff;
+        z-index: 1;
+    }
+
+    #btnordenars {
+        position: relative;
+        top: 0.4em;
+        right: 0.5em;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+}
+
+/*Agregado por manuel para la feria*/
+@media (min-width: 923px){
+    .btn_style1 {
+        margin: auto;
+        padding-left: 30px;
+        position: absolute;
+        right: 10px;
+    }   
+}
+.botonsito{
+    max-width: 225px;
+}
+
+ul.navbar-nav li.nav-item{
+    border-bottom: rgba(60, 50, 164) 3px solid;
+    transition: all  .5s;
+}
+@media(min-width:573px){
+    ul.navbar-nav {
+        margin-left: 15px;
+    }
+    ul.navbar-nav li.nav-item:hover{
+        border-bottom-color: #28216D;
+        background-color: rgb(0,0,0,0.1);
+    }
+    ul.navbar-nav li.nav-item.active{
+        border-bottom-color: #eee;
+        
+    }
+}
+@media(max-width:573px){
+ 
+    ul.navbar-nav li.nav-item:hover{
+        background-color: rgb(0,0,0,0.1);
+    }
+  
 }

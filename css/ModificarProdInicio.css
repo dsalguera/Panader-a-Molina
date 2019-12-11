@@ -1,0 +1,373 @@
+/*.content-main .pedidos ul li .imagen img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    max-height: 60px;
+    border-radius: 20px;
+}*/
+   /************************************/
+.content-main{
+    margin: 0px;
+    padding-top: 70px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.content-main> div{
+    display: block;
+    float: left;
+    height: 90vh;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.content-main .pedidos{
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: block;
+    height: 100%;   
+    overflow: auto;
+    border: 1px solid rgb(0,0,0,0.1);
+}
+.content-main .pedidos ul{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.content-main .pedidos ul li{
+    list-style-type: none;
+    background-color: white;
+    display: block;
+    width: 43%;
+    min-width: 100px;
+    border: 1px solid rgb(0,0,0,0.5);
+    margin: 0px auto;
+    margin-top: 20px;
+    height: 109px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-right: 16px;
+}
+
+.content-main .pedidos ul li div{
+    display: block;
+    float: left;
+}
+.content-main .pedidos ul li .imagen{
+    width: 20%;
+}
+.content-main .pedidos ul li .imagen img{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 205%;
+    max-height: 74px;
+    border-radius: 20px;
+    margin-left: 63px;
+}
+.content-main .pedidos ul li .info{
+    width: 70%;
+}
+.content-main .pedidos ul li .info span{
+    display: block;
+    text-align: center;
+}
+.content-main .pedidos ul li .simbolo{
+    width: 10%;
+    padding-top: 25px;
+}
+.content-main .pedidos ul li .simbolo span{
+    font-size: 2.5em;
+    color: rgb(61, 50, 172);
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;   
+}
+.content-main .pedidos ul li .simbolo span:hover{
+    color: white;
+    background-color: rgb(61, 50, 172);
+}
+.content-main .pedidos ul li .simbolo span:active{
+    color: rgb(61, 50, 172,0.5);
+    background-color: white;
+}
+.realizar ul li .imagen{
+    width: 20%;
+}
+.realizar ul li .imagen img{
+    display: block;
+    margin: auto;
+    margin-top: 27px;
+    width: 125%;
+    max-width: 65px;
+    border-radius: 20px;
+    margin-left: 195%;
+}
+.realizar ul li .info{
+    width: 60%;
+    padding-top: 10px;
+}
+.realizar ul li .info span{
+    display: block;
+    margin-left: 24%;
+    margin-top: -4%;
+}
+.realizar ul li .simbolo{
+    width: 20%;
+    padding-top: 5px;
+    position: relative;
+}
+.realizar ul li .simbolo span:nth-of-type(1){
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em;
+    color: red;
+    margin: auto; 
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.realizar ul li .simbolo span:nth-of-type(2){
+    display: block;
+    margin-top: 30px;
+    font-size: 12px;
+}
+.realizar ul li .simbolo span:nth-of-type(2) input{
+    width: 20px;
+}
+.realizar ul li .simbolo span:nth-of-type(1):hover{
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}
+.realizar ul li:last-child .simbolo span:nth-of-type(1):hover{
+    color: green;
+    border-radius: 0px;
+}
+.realizar ul li:last-child .simbolo span:nth-of-type(1){
+    color: green;
+    border-radius: 0px;
+    background-color: white;
+}
+.realizar ul li{
+    list-style-type: none;
+    background-color: white;
+    display: block;
+    width: 61%;
+    min-width: 100px;
+    border: 1px solid rgb(0,0,0,0.5);
+    margin: 0px auto;
+    margin-top: 20px;
+    height: 128px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.content-main div{
+    display: block;
+    float: left;
+}
+.content-main .informacion{
+    color: rgb(60, 50, 164);
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.content-main .informacion> div{
+    margin-top: 5px;
+    height: 20px;
+}
+label,input[type="text"], .content-main .informacion span{
+    width: 95%;
+    height: 20px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+.realizar{
+    width: 100%;
+}
+.realizar div {
+    display: block;
+}
+.realizar .medio{
+    display: block;
+    background-color: rgb(0,0,0,0.7);
+    height: 55vh;
+    width:100%;
+    overflow: auto;
+    margin-top: 5px;
+    border: 7px solid  rgb(0,0,0,0.08);
+    border-radius: 30px;
+}
+.realizar .bajo{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.realizar .bajo textarea{
+    display: block;
+    width: 100%;
+    margin-top:10px;
+    height: 80px;
+    border-radius: 20px;	
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border-color: rgb(60, 50, 164);
+    color: rgb(60, 50, 164);
+    background-color: rgba(230, 230, 230,0.90); 
+}
+.realizar .bajo textarea:hover,.realizar .bajo textarea:focus{
+    border: 1px solid rgb(61, 50, 172);
+}
+.realizar .bajo   a{
+font-size: 18px;
+display: block;
+text-decoration: none;
+width:80%;
+padding: 10px 5px;
+box-sizing: border-box;
+color: white;
+background-color: rgb(61, 50, 172);
+border-radius: 8px;
+margin:auto;
+margin-top:20px;
+text-align: center;
+font-size: 14px;
+border: 1px solid rgb(255,255,255,0.5);
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;   
+}
+.realizar .bajo   a:hover{
+background-color:  white;
+color: rgb(61, 50, 172);
+border: 1px solid rgb(61, 50, 172);
+transform: translateY(4px);
+cursor: pointer;
+}
+.realizar .bajo   a:active{
+background-color:  rgb(61, 50, 172,0.9);
+color: white;
+transform: translateY(6px);
+cursor: pointer;
+}
+.realizar .bajo div:nth-of-type(3)   a{
+    margin:auto;
+    margin-top:10px;
+    width: 100%;
+    background-color: rgb(21, 159, 92);
+    color: white;
+}
+.realizar .bajo div:nth-of-type(3)   a:hover{
+    color: rgb(21, 159, 92);
+    background-color: white;
+    border-color: rgb(21, 159, 92);
+}
+.realizar .bajo div:nth-of-type(3)   a:active{
+    background-color: rgb(21, 159, 92,0.6);
+    color: white;
+}
+
+.medio ul{
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.medio ul li{
+    list-style: none;
+}
+.ste{
+    visibility: hidden;
+}
+.modal-confirm {
+    color: #434e65;
+    max-width: 525px;
+    width: 95%;
+  }
+
+.informacion h1{
+    font-size: 20px;
+    text-align: start;
+}
+
+@media only screen and (min-width: 471px) {
+    .content-main .pedidos ul li {
+   
+        width: 62%;
+        min-width: 100px;
+        margin-top: 20px;
+        height: 121px;
+        padding: 5px;
+        padding-right: 16px;
+    }
+    
+    .content-main .pedidos ul li .imagen img {
+        margin-top: 20px;
+        width: 205%;
+        max-height: 74px;
+        border-radius: 20px;
+        margin-left: 170%;
+    }
+    .realizar ul li .imagen img {
+        margin-top: 25px;
+        width: 171%;
+        max-width: 72px;
+        border-radius: 20px;
+        margin-left: 183%;
+    }
+    .realizar ul li{
+        width: 68%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .content-main .pedidos ul li {
+   
+        width: 62%;
+        min-width: 100px;
+        margin-top: 20px;
+        height: 121px;
+        padding: 5px;
+        padding-right: 16px;
+    }
+    
+    .content-main .pedidos ul li .imagen img {
+        margin-top: 20px;
+        width: 205%;
+        max-height: 74px;
+        border-radius: 20px;
+        margin-left: 170%;
+    }
+    .realizar ul li .imagen img {
+        margin-top: 25px;
+        width: 171%;
+        max-width: 72px;
+        border-radius: 20px;
+        margin-left: 183%;
+    }
+    
+    .realizar ul li{
+        width: 68%;
+    }
+  }
+
