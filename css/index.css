@@ -599,6 +599,9 @@ ul.navbar-nav li.nav-item{
     border-bottom: rgba(60, 50, 164) 3px solid;
     transition: all  .5s;
 }
+ul.navbar-nav li:last-child{
+min-width: 87px;
+}
 @media(min-width:573px){
     ul.navbar-nav {
         margin-left: 15px;
