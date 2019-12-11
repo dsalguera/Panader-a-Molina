@@ -3,7 +3,7 @@ var selec;
 var lista_productos = document.getElementsByClassName("listaproductos");
 var formula = document.getElementsByClassName("formlista");
 var formulario = document.getElementsByClassName("formlista")[0];
-
+var imghist = document.getElementsByClassName("imghist")[0];
 
 cargar();
 function cargar() {
@@ -219,6 +219,35 @@ function readURL() {
 
   reader.readAsDataURL(file);
 }
+
+function readURL2() {
+
+  var file = document.getElementById('uploadfile').files[0];
+  var reader = new FileReader();
+  reader.onload = function (e) {
+    var image = document.createElement("img");
+    image.src = e.target.result;
+    if (image.value === "") {
+      alert("vacio");
+    }
+    else {
+      imghist.getElementsByTagName("div")[0].getElementsByTagName("img")[0].src = image.src;
+    }
+
+
+  }
+
+  reader.readAsDataURL(file);
+}
+function btnguar(){
+  imghist.getElementsByTagName("div")[0].getElementsByTagName("img")[0].src = "img/selecionarimg.png";
+  limpiarInputFile();
+}
+
+
+
+
+
 function limpiarInputFile() {
   document.getElementById("uploadfile").value = "";
 }
