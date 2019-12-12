@@ -310,6 +310,41 @@ cursor: pointer;
     text-align: start;
 }
 
+.btnback{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 75px;
+    left:10px;
+}
+.btnback a{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(61, 50, 172,0.1);
+    color: rgb(61, 50, 172,0.6);
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;   
+}
+.btnback a span{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 3em;    
+}
+.btnback a:hover{
+    transform: translateY(4px);
+    color: white;
+    background-color: rgb(61, 50, 172);
+}
+.btnback a:active{
+    background-color:rgb(61, 50, 172,0.5);
+    transform: translate(-8px,4px);
+}
+
 @media only screen and (min-width: 471px) {
     .content-main .pedidos ul li {
    
